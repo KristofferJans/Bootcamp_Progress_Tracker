@@ -89,7 +89,7 @@ export const HomeworkCard = styled.div`
   align-items: center;
 `;
 
-// Circular Progress (example placeholder for circular progress bar)
+// Circular Progress example
 export const CircularProgress = styled.div`
   width: 50px;
   height: 50px;
