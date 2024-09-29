@@ -1,3 +1,5 @@
+import { useSession } from "next-auth/react";
+
 // pages/index.js
 import React from "react";
 import {
@@ -12,13 +14,16 @@ import {
   HomeworkCard,
   CircularProgress,
 } from "../components/StyledComponents";
+import AuthButton from "@/components/AuthButton";
 
 const Home = () => {
+  const { data: session, status } = useSession();
   return (
     <Container>
       {/* Sidebar */}
       <Sidebar>
         <h1>Bootcamp Tracker</h1>
+        <AuthButton>Login</AuthButton>
         <NavButton>Dashboard</NavButton>
         <NavButton>Topics</NavButton>
         <NavButton>All Challenges</NavButton>
@@ -29,7 +34,7 @@ const Home = () => {
       <MainContent>
         <TopBar>
           <div>
-            <h2>Hi There, Kristoffer</h2>
+            <h2>Hi There, {session?.user?.name || " Name"}</h2>
             <p>welcome back!</p>
           </div>
           <input type="text" placeholder="Search..." />
