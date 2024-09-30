@@ -1,4 +1,3 @@
-// components/StyledComponents.js
 import styled from "styled-components";
 
 // Layout Container
