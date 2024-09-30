@@ -1,45 +1,23 @@
-import { useSession } from "next-auth/react";
-
-// pages/index.js
 import React from "react";
-import {
-  Container,
-  Sidebar,
-  NavButton,
-  TopBar,
-  MainContent,
-  Card,
-  StatsSidebar,
-  ProgressSection,
-  HomeworkCard,
-  CircularProgress,
-} from "../components/StyledComponents";
-import AuthButton from "@/components/AuthButton";
+import { useSession } from "next-auth/react";
+import { Container, MainContent, Card } from "../components/StyledComponents";
+import Navbar from "@/components/Navbar";
+import Topbar from "@/components/Topbar";
+import StatisticSidebar from "@/components/StatisticsSidebar";
 
-const Home = () => {
+export default function Home() {
   const { data: session, status } = useSession();
   return (
     <Container>
-      {/* Sidebar */}
-      <Sidebar>
-        <h1>Bootcamp Tracker</h1>
-        <AuthButton>Login</AuthButton>
-        <NavButton>Dashboard</NavButton>
-        <NavButton>Topics</NavButton>
-        <NavButton>All Challenges</NavButton>
-        <NavButton>Homework / ToDo</NavButton>
-      </Sidebar>
+      {/* Navigation Sidebar left*/}
+      <Navbar></Navbar>
 
       {/* Main Content */}
       <MainContent>
-        <TopBar>
-          <div>
-            <h2>Hi There, {session?.user?.name || " Name"}</h2>
-            <p>welcome back!</p>
-          </div>
-          <input type="text" placeholder="Search..." />
-        </TopBar>
+        {/* Topbar */}
+        <Topbar></Topbar>
 
+        {/* Statistic Cards - currently hardcoded */}
         <div
           style={{
             display: "flex",
@@ -62,28 +40,11 @@ const Home = () => {
         </div>
 
         <h2 style={{ marginTop: "40px" }}>Finished Challenges</h2>
-        {/* More content here */}
+        {/* add more content here later*/}
       </MainContent>
 
       {/* Stats Sidebar */}
-      <StatsSidebar>
-        <h2>Level: Coding Beginner</h2>
-        <p>Statistics</p>
-        {/* Insert circular progress and stats */}
-        <ProgressSection>
-          <h3>Homework Progress</h3>
-          <HomeworkCard>
-            <CircularProgress>50%</CircularProgress>
-            <div>
-              <h4>Flexbox Navigation</h4>
-              <p>CSS Flexbox</p>
-            </div>
-          </HomeworkCard>
-          {/* Repeat for more homework cards */}
-        </ProgressSection>
-      </StatsSidebar>
+      <StatisticSidebar></StatisticSidebar>
     </Container>
   );
-};
-
-export default Home;
+}
