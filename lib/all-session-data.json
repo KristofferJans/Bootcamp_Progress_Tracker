@@ -1,0 +1,557 @@
+[
+  {
+    "title": "HTML and the web",
+    "category": "HTML",
+    "short": "Understand how the web works and learn the basics of writing HTML with semantic elements.",
+    "long": "This session covers how the web operates through client-server communication and introduces the basics of HTML. It includes understanding the role of different HTML elements, their attributes, and how to use semantic HTML to structure a web page.",
+    "skills": ["How the web works", "HTML basics", "Structuring a Website"]
+  },
+  {
+    "title": "CSS Basics",
+    "category": "CSS",
+    "short": "Learn the fundamentals of CSS, including syntax, selectors, box model, and linking stylesheets to HTML.",
+    "long": "This session covers the basics of CSS, teaching you how to add styles to HTML elements using selectors and declarations. You'll learn about the CSS box model, the difference between inline and block elements, and how to link external stylesheets to HTML. The session also provides an overview of how the cascading mechanism works in CSS and its syntax.",
+    "skills": [
+      "Linking Stylesheets",
+      "CSS syntax",
+      "Selectors",
+      "CSS Properties",
+      "Combining Selectors",
+      "Inheritance",
+      "Box Model",
+      "Inline and block elements"
+    ]
+  },
+  {
+    "title": "CSS Positioning",
+    "category": "CSS",
+    "short": "Learn about different CSS positioning types, how to define element positions, and understand the basics of z-index.",
+    "long": "This session covers the various ways to position HTML elements using CSS. It explains the different positioning types such as static, relative, absolute, fixed, and sticky, and how they affect an element's placement within a document. Additionally, it introduces the concept of z-index to control the stacking order of positioned elements.",
+    "skills": [
+      "Positioning: static",
+      "Positioning: relative",
+      "Positioning: absolute",
+      "Positioning: fixed",
+      "Positioning: sticky",
+      "Using position properties (top, bottom, right, left)",
+      "Understanding z-index"
+    ]
+  },
+  {
+    "title": "CSS Structure",
+    "category": "CSS",
+    "short": "Learn how to structure CSS effectively to handle conflicts and improve maintainability.",
+    "long": "This session covers the CSS cascade, specificity, best practices for structuring CSS, and using custom properties for reusable styles.",
+    "skills": [
+      "CSS Cascade",
+      "Specificity",
+      "CSS Structure best practices",
+      "CSS practical strategies",
+      "Custom properties (CSS variables)"
+    ]
+  },
+  {
+    "title": "CSS Flexbox",
+    "category": "CSS",
+    "short": "Learn how to use CSS Flexbox to layout elements effectively and make websites more responsive.",
+    "long": "This session covers the use of CSS Flexbox for aligning and distributing space among items in a container. You will learn about its functionality in laying out elements horizontally or vertically, how it adapts to different screen sizes, and how to use key flex properties like justify-content, align-items, gap, flex-direction, and flex-wrap.",
+    "skills": [
+      "Flexbox",
+      "Important Flex Properties",
+      "Flex-direction",
+      "Flex-wrap"
+    ]
+  },
+  {
+    "title": "CSS Responsive",
+    "category": "CSS",
+    "short": "Learn how to make your web designs responsive for various devices using mobile-first design, responsive units, and media queries.",
+    "long": "This session introduces the concept of responsive design, emphasizing mobile-first design principles, the use of responsive units like `vh`, `vw`, `em`, and `rem`, and how to use media queries to create adaptable styles for different devices and orientations.",
+    "skills": [
+      "Mobile First Design",
+      "Responsive Units",
+      "Media Queries",
+      "Showing different images based on media queries"
+    ]
+  },
+  {
+    "title": "Accessibility",
+    "category": "HTML",
+    "short": "Learn the principles of accessibility and how to make web development inclusive for all users, focusing on semantic HTML, ARIA roles, and accessible design.",
+    "long": "This session explores the importance of accessibility in web development, highlighting its benefits like wider audience reach and improved SEO. It emphasizes the use of semantic HTML for better structure and readability, and introduces ARIA (Accessible Rich Internet Applications) roles, states, and properties for enhancing the accessibility of web applications. By following best practices like adding 'alt' attributes to images, ensuring high contrast colors, and using clear language, developers can make their websites more inclusive.",
+    "skills": [
+      "Semantic HTML",
+      "ARIA",
+      "ARIA Roles",
+      "ARIA States and Properties"
+    ]
+  },
+  {
+    "title": "CSS Grid",
+    "category": "CSS",
+    "short": "Learn how to use CSS Grid to layout web pages, position elements in grid cells, and align cells effectively.",
+    "long": "This session covers CSS Grid Layout, a powerful tool for creating responsive and flexible grid-based layouts. You will learn how to define a grid container, utilize the 'fr' unit for fractions of space, and position grid elements using grid-column, grid-row, or grid-area properties. Additionally, you will explore the grid-template-areas property to group cells into named areas and techniques for column, row, and cell alignment within the grid.",
+    "skills": [
+      "CSS Grid Layout",
+      "Grid container",
+      "Element Positioning",
+      "grid-template-areas",
+      "Column and Row Alignment",
+      "Cell Alignment"
+    ]
+  },
+  {
+    "title": "CSS Animations",
+    "category": "CSS",
+    "short": "Learn how to use CSS animations, transitions, and keyframes to create dynamic effects with properties like duration, easing curves, and iteration.",
+    "long": "This session introduces CSS animations through the `transition` and `animation` properties, teaching how to smoothly transition between element states using duration, easing functions, and animatable properties. You'll also learn how to create complex animations with `@keyframes` and control their behavior through properties like `animation-iteration-count` and `animation-direction`. Additionally, you'll understand how to enhance accessibility by reducing animations based on user preferences with the `prefers-reduced-motion` media query.",
+    "skills": [
+      "The `transition` property",
+      "Easing Curves",
+      "Animatable Properties",
+      "Complex Animations with `@keyframes` and `animation`"
+    ]
+  },
+  {
+    "title": "JS Variables and Numbers",
+    "category": "JavaScript",
+    "short": "Learn how to declare variables, understand data types, use math operations, and handle type coercion and number systems in JavaScript.",
+    "long": "This session covers JavaScript variable declarations (`var`, `let`, `const`) and their differences, as well as an overview of primitive data types like strings, numbers, and booleans. You will learn best practices for naming variables, perform basic math operations with operators, and understand the concept of type coercion. The session also touches upon different number systems such as binary and hexadecimal.",
+    "skills": [
+      "Variable Declarations",
+      "Primitive Data Types",
+      "Variable Naming",
+      "Math & Operators",
+      "Operator Precedence",
+      "Assignment Operators",
+      "Type Coersion",
+      "Number Systems"
+    ]
+  },
+  {
+    "title": "JavaScript Basics",
+    "category": "JavaScript",
+    "short": "Learn to connect JavaScript files, log to the console, select HTML elements, and add interactivity with event listeners and CSS class manipulation.",
+    "long": "This session introduces the basics of JavaScript in the browser, including how to connect a JavaScript file using the `<script>` tag, log messages to the console for debugging, and select HTML elements with `querySelector`. It also covers adding interactivity to web pages using `addEventListener` for handling events like clicks, and manipulating CSS classes on elements by adding, removing, or toggling classes dynamically.",
+    "skills": [
+      "Connect a JavaScript file",
+      "Hello World: console.log()",
+      "Selecting HTML Elements: .querySelector()",
+      "Add Interaction: .addEventListener()",
+      "Add/remove & toggle classes: .classList."
+    ]
+  },
+  {
+    "title": "JS Conditions and Booleans",
+    "category": "JavaScript",
+    "short": "Learn to use conditions for program flow, understand booleans and truthy/falsy values, work with comparison and logical operators, and write ternary expressions.",
+    "long": "This session introduces boolean values and truthy/falsy concepts, explains how to control program flow with conditions like `if/else` statements and `switch` cases, and covers comparison and logical operators for decision-making in code. It also includes using ternary operators for concise conditional expressions and highlights the nuances of type coercion in JavaScript.",
+    "skills": [
+      "Boolean Values",
+      "Truthy and Falsy Values",
+      "Comparison Operators",
+      "Logical Operators",
+      "Control Flow: if/else",
+      "Switch",
+      "Ternary Operator: ? :",
+      "Advanced: Boolean Coercion"
+    ]
+  },
+  {
+    "title": "JS Objects and Arrays",
+    "category": "JavaScript",
+    "short": "Learn to create, access, and manipulate arrays and objects, including nested structures and their properties.",
+    "long": "This session covers the fundamentals of working with arrays and objects in JavaScript. It includes creating arrays to store multiple values, accessing their elements, and manipulating arrays with common methods. The session also explores creating objects with key-value pairs, accessing properties using dot and bracket notation, modifying values, and handling nested structures of objects and arrays.",
+    "skills": [
+      "Arrays",
+      "Common Array Attributes and Methods",
+      "Objects",
+      "Nested Objects / Arrays"
+    ]
+  },
+  {
+    "title": "JS Functions",
+    "category": "JavaScript",
+    "short": "Learn how to write, call, and use functions in JavaScript, understand function parameters, and explore the concept of scope.",
+    "long": "This session introduces the fundamentals of JavaScript functions, including how to define and call functions, pass parameters, and use them to perform specific tasks. It also covers the concept of scope, differentiating between global and function scope, and how variables are visible and accessible within and outside of functions.",
+    "skills": [
+      "Functions",
+      "Function Declarations",
+      "Function Calls",
+      "Scope",
+      "Function Scope",
+      "Global Scope"
+    ]
+  },
+  {
+    "title": "JS Functions 2",
+    "category": "JavaScript",
+    "short": "Learn about return statements, early returns, and writing functions using arrow function expressions in JavaScript.",
+    "long": "This session delves deeper into JavaScript functions, exploring how to return values from functions, use early return statements to improve code readability, and define functions with arrow function expressions for a more concise syntax. Additionally, the session covers implicit return statements in arrow functions and introduces callback functions as a concept.",
+    "skills": [
+      "Return Statements",
+      "Early Return Statements",
+      "Arrow Function Expressions",
+      "Implicit Return Statements",
+      "Callback Functions"
+    ]
+  },
+  {
+    "title": "HTML Forms",
+    "category": "HTML",
+    "short": "Learn the structure of HTML forms, common input types, validation, and techniques to build accessible forms.",
+    "long": "This session covers the structure and setup of HTML forms, including wrapping form elements with the `<form>` tag, labeling inputs, and using various input types like text, email, number, and more. It explains client-side validation through attributes like `required` and `pattern`, discusses the behavior of form submission, and introduces form buttons for submission and reset. The session also covers accessibility best practices using fieldsets, legends, and `aria` labels.",
+    "skills": [
+      "Basic form setup",
+      "Different types of form fields",
+      "HTML Form Validation",
+      "Default Behavior of Form Submit",
+      "Buttons",
+      "Form structure and a11y"
+    ]
+  },
+  {
+    "title": "JS Inputs and Strings",
+    "category": "JavaScript",
+    "short": "Learn different ways to create and manipulate strings in JavaScript, and work with HTML input elements and their values.",
+    "long": "This session explores string creation using single, double, and back ticks (template literals) and covers string properties and methods for manipulation. It also discusses working with input fields in HTML, including accessing and updating their values and applying transformations to input values through JavaScript event listeners.",
+    "skills": [
+      "Strings",
+      "Template Literals",
+      "String Properties and Methods",
+      "Input Fields"
+    ]
+  },
+  {
+    "title": "JS Forms",
+    "category": "JavaScript",
+    "short": "Learn how to handle form submission, access form values, and enhance user experience with JavaScript.",
+    "long": "This session covers listening to form `submit` events and preventing their default behavior with `.preventDefault()`. It introduces accessing form elements and their values using `event.target.elements`, `FormData`, and working with checkboxes. The session also discusses the `input` event for real-time updates, focusing input fields programmatically, and resetting forms for better user experience.",
+    "skills": [
+      "Listening to the submit event and preventing the Default Behavior",
+      "The event Object and event.target",
+      "Accessing Interactive Fields: event.target.elements and the name Attribute",
+      "Using Input Values",
+      "Exception: Reading Values from Checkboxes",
+      "The input Event",
+      "Focus Input Fields",
+      "Resetting Forms"
+    ]
+  },
+  {
+    "title": "JS createElement",
+    "category": "JavaScript",
+    "short": "Learn how to manipulate the DOM by creating and appending HTML elements using JavaScript, and explore element properties and methods.",
+    "long": "This session introduces the Document Object Model (DOM) as a way to interact with HTML elements using JavaScript. It covers generating elements with `document.createElement`, adding them to the DOM using `.append`, and modifying properties such as `classList` and `textContent`. The session also explains the use of `.innerHTML` to dynamically set or reset HTML content within an element, while noting the potential security concerns.",
+    "skills": [
+      "The DOM",
+      "document.createElement",
+      "Element Properties and Methods",
+      ".innerHTML"
+    ]
+  },
+  {
+    "title": "JS Loops",
+    "category": "JavaScript",
+    "short": "Learn how to use different types of loops in JavaScript to repeat tasks until a condition is met.",
+    "long": "This session introduces the concept of loops in JavaScript, including `while` loops for repeating tasks based on a condition, classic `for` loops for iterating a specific number of times or over elements, `for...in` loops for iterating over object keys, and `for...of` loops for iterating over array elements. Each loop type serves a different use case for handling repetitive tasks efficiently.",
+    "skills": ["What is a loop", "while", "for", "for...in", "for...of"]
+  },
+  {
+    "title": "JS Callback Functions",
+    "category": "JavaScript",
+    "short": "Learn about callback functions, how to use them, and understand higher order functions in JavaScript.",
+    "long": "This session covers the concept of callback functions, which are functions passed as arguments to other functions. It explores how to use anonymous and named functions as callbacks and introduces higher order functions like `addEventListener` that utilize callbacks to execute code under specific conditions. The session also explains how callbacks can accept parameters, and briefly mentions common higher order functions like `.then`, `.forEach`, `.map`, and `.filter`.",
+    "skills": [
+      "Callback Functions",
+      "Named Callback Functions",
+      "Higher Order Functions",
+      "Parameters in Callback Functions"
+    ]
+  },
+  {
+    "title": "JS Array Methods",
+    "category": "JavaScript",
+    "short": "Learn to iterate over arrays using `forEach`, `map`, and `filter`, and handle elements in the DOM with `document.querySelectorAll`.",
+    "long": "This session focuses on JavaScript array methods, including `forEach` for executing side effects on each array element, `map` for transforming arrays into new arrays, and `filter` for creating subsets of arrays based on conditions. It also covers chaining these methods to achieve complex transformations efficiently and introduces `document.querySelectorAll` to select multiple DOM elements and iterate over them.",
+    "skills": [
+      "Introduction to array methods",
+      "forEach",
+      "map",
+      "filter",
+      "Chaining array methods",
+      "document.querySelectorAll"
+    ]
+  },
+  {
+    "title": "JS Structure",
+    "category": "JavaScript",
+    "short": "Learn how to structure JavaScript projects using modules, and understand the concepts of importing, exporting, and organizing code efficiently.",
+    "long": "This session introduces JavaScript modules, which allow code to be separated into different files using `import` and `export` statements. You'll learn how to use named and default exports, and how to mix them when importing code. The session also covers best practices for structuring JavaScript projects, including creating utility functions, constants, and vanilla JavaScript components to keep code modular and reusable.",
+    "skills": [
+      "JavaScript Modules",
+      "Exporting using `export` Statements",
+      "Importing using `import` Statements",
+      "Structuring JavaScript Code"
+    ]
+  },
+  {
+    "title": "JS Array Methods 2",
+    "category": "JavaScript",
+    "short": "Explore advanced JavaScript array methods like `includes`, `find`, `sort`, `some`, `every`, and `reduce` to manipulate and evaluate array contents.",
+    "long": "This session covers advanced array methods such as `includes` for checking if an element exists, `find` and `findIndex` to locate elements based on conditions, and `sort` and `reverse` to arrange array elements. It also introduces `slice()` to avoid mutating the original array, `some` and `every` to evaluate elements against conditions, and `reduce` to accumulate array elements into a single value. The session emphasizes understanding how these methods alter or create new arrays while maintaining code readability and efficiency.",
+    "skills": [
+      "`includes`",
+      "`find` and `findIndex`",
+      "`sort` and `reverse`",
+      "`slice` to make a copy",
+      "`some` and `every`",
+      "`reduce`"
+    ]
+  },
+  {
+    "title": "JS Async Functions",
+    "category": "JavaScript",
+    "short": "Learn how to work with asynchronous JavaScript, handle promises, and use `async` and `await` for cleaner code.",
+    "long": "This session introduces asynchronous programming in JavaScript, focusing on how to use promises to handle code that runs in the background, like network requests or animations. You will learn about properties and methods of promises (`then`, `catch`, `finally`), and how to write async functions using the `async` and `await` keywords to simplify chaining asynchronous operations. Error handling is covered using `try`, `catch`, and `finally`, along with methods like `Promise.all()` for running multiple promises in parallel.",
+    "skills": [
+      "Understanding asynchronous code",
+      "Working with promises",
+      "Using `async` and `await` keywords",
+      "Handling errors with `try`/`catch`",
+      "Executing parallel promises with `Promise.all()`"
+    ]
+  },
+  {
+    "title": "JS Fetch",
+    "category": "JavaScript",
+    "short": "Learn how to work with asynchronous code using the Fetch API to interact with RESTful services, handle JSON data, and manage HTTP responses.",
+    "long": "This session focuses on working with the Fetch API in JavaScript to make asynchronous requests to web services. You will learn how to use Promises and `async/await` to handle the completion of these requests effectively, parse JSON data, and handle HTTP response codes. The session also covers error handling strategies for both network and response-related errors, as well as a basic introduction to RESTful API concepts.",
+    "skills": [
+      "Understanding asynchronous code",
+      "Using Promises and `async/await`",
+      "Working with the Fetch API",
+      "Parsing JSON data",
+      "Handling HTTP response codes",
+      "Understanding REST APIs",
+      "Error handling in async operations"
+    ]
+  },
+  {
+    "title": "JS Modern Syntax",
+    "category": "JavaScript",
+    "short": "Learn about modern JavaScript syntax including destructuring assignment, rest and spread syntax, optional chaining, and nullish coalescing.",
+    "long": "This session covers the latest features and syntax in JavaScript, providing insight into how the language is evolving. You will learn how to use destructuring for easier access to array and object values, rest and spread syntax to manage collections of data, optional chaining to safely access nested properties, and nullish coalescing to handle null or undefined values more effectively.",
+    "skills": [
+      "Destructuring arrays and objects",
+      "Using rest and spread syntax",
+      "Optional chaining for safe property access",
+      "Nullish coalescing for default values",
+      "Understanding JavaScript's evolving syntax"
+    ]
+  },
+  {
+    "title": "JS Unit Testing",
+    "category": "JavaScript",
+    "short": "Learn the basics of unit testing, how to write and run tests with Jest, and understand Test Driven Development (TDD).",
+    "long": "This session introduces unit testing, a process of testing individual units of code to ensure they work as expected. You will learn how to write automated tests for functions using Jest, an easy-to-use testing framework. You will also explore the concept of Test Driven Development (TDD), a methodology in which tests are written before the actual code. By the end of this session, you will know how to structure test files, write meaningful test cases, use Jest matchers to compare expected results, and run tests locally via the command line.",
+    "skills": [
+      "Writing and running Jest unit tests",
+      "Using TDD to guide development",
+      "Understanding automated testing",
+      "Structuring test files effectively",
+      "Using Jest matchers for assertions"
+    ]
+  },
+  {
+    "title": "React Basics",
+    "category": "React",
+    "short": "Learn the basics of React, including components, JSX, rendering, and working with npm and the React ecosystem.",
+    "long": "This session covers the foundational concepts of React, a JavaScript library for building user interfaces. You will learn how to write declarative code using JSX, create and use React components, understand the React rendering process, and differentiate between imperative and declarative programming. Additionally, the session explores the npm ecosystem for managing packages, how to scaffold a new React project using Create React App, and an introduction to semantic versioning.",
+    "skills": [
+      "What is React and why do we use it?",
+      "Using JSX",
+      "React Components",
+      "Imperative vs. Declarative Programming",
+      "How React Renders",
+      "Nice to know: React, JSX, Transpilers and Bundlers",
+      "npm",
+      "`package.json`",
+      "Semantic Versioning",
+      "Project Scaffolding with `Create React App`"
+    ]
+  },
+  {
+    "title": "React Props",
+    "category": "React",
+    "short": "Learn how to use props to pass data to child components in React, how to pass and use props in a component, and how to implement conditional rendering.",
+    "long": "This session introduces props in React, which allow you to pass data to child components as a way to make them dynamic and reusable. You'll learn how to pass different types of props to a component, how to use destructuring for better readability, and how to handle props with different data types, including strings, numbers, arrays, and functions. Additionally, the session covers conventions for naming props, treating them as immutable, and techniques for conditional rendering to control what gets displayed based on prop values.",
+    "skills": [
+      "Using Props",
+      "Passing Props to a Component",
+      "Conditional Rendering"
+    ]
+  },
+  {
+    "title": "React Nesting",
+    "category": "React",
+    "short": "Learn how to create a hierarchy of custom components in React, use the `children` prop for nesting, and understand component composition.",
+    "long": "This session covers how to build a component hierarchy in React by nesting custom components and passing JSX as props. It introduces the `children` prop, which allows nested elements to be rendered within parent components, and shows how to return multiple elements using `Fragments`. The session also covers the concept of composition, where complex components are constructed from simpler components to form a cohesive application design.",
+    "skills": [
+      "Passing JSX as Props",
+      "Using the `children` Prop",
+      "Fragments",
+      "Composition"
+    ]
+  },
+  {
+    "title": "React Project Setup",
+    "category": "React",
+    "short": "Learn how to scaffold a React project using Vite, understand its folder structure, and work with npm scripts.",
+    "long": "This session covers setting up a React project using Vite, which simplifies project scaffolding. It includes understanding the folder structure Vite creates and the common npm scripts used to run, lint, and preview the project.",
+    "skills": ["Project Scaffolding", "Vite", "Folder Structure"]
+  },
+  {
+    "title": "React State",
+    "category": "React",
+    "short": "Learn how to use state in React to manage data that changes over time.",
+    "long": "This session explains the concept of state in React, how to use the `useState` hook to manage data that changes over time, and how React components re-render when state changes. It covers examples such as toggling a 'like' on a social media post and handling multiple states within a component.",
+    "skills": [
+      "Understanding the concept of state in React",
+      "Using `useState()` to handle state",
+      "Understanding how state changes trigger re-renders"
+    ]
+  },
+  {
+    "title": "React with Arrays",
+    "category": "React",
+    "short": "Learn how to use .map() to render lists in JSX, render items from an array of objects, and add unique keys for list items.",
+    "long": "This session covers using the .map() method to transform and render arrays in JSX, the importance of adding a unique key property when rendering lists, and using keyed fragments to wrap items that aren't enclosed in a single JSX tag. You will understand how React utilizes keys to track changes when re-rendering and how to correctly apply these practices to manage lists efficiently.",
+    "skills": ["Arrays in JSX", "Key Property", "Keyed Fragments"]
+  },
+  {
+    "title": "React State 2",
+    "category": "React",
+    "short": "Learn how to handle form fields, share state between components through lifting state up, handle form submission events, and understand hooks and their rules.",
+    "long": "This session focuses on sharing state between React components by passing state and functions down as props, lifting state up to share it across components, and handling form data using controlled and uncontrolled inputs. You'll learn how to use React's `useState` for state management, understand how state updates are asynchronous, and explore what hooks are and how to properly use them in React applications.",
+    "skills": [
+      "Sharing State Between Components",
+      "Handling Form Data",
+      "State Updates are not Immediate",
+      "React Hooks"
+    ]
+  },
+  {
+    "title": "React State 3",
+    "category": "React",
+    "short": "Learn how to handle arrays and objects in React state effectively and avoid state mutation.",
+    "long": "This session teaches how to update arrays and objects in React state without mutating them, ensuring state immutability. You'll explore techniques for adding, removing, replacing, and sorting elements in arrays and objects within state. The session also covers strategies for grouping related state, avoiding redundant state, and preventing duplicate state, with best practices for structuring complex state effectively.",
+    "skills": [
+      "Avoiding State Mutation",
+      "Updating Objects in State",
+      "Updating Arrays in State",
+      "Updating Arrays of Objects in State",
+      "Choosing the State Structure"
+    ]
+  },
+  {
+    "title": "React Effects and Fetch",
+    "category": "React",
+    "short": "Learn how to use the `useEffect` hook to manage side effects like fetching data and synchronizing React components with external systems.",
+    "long": "This session covers how to use the `useEffect` hook to handle side effects in React, such as fetching data from APIs, manipulating the DOM, and working with timers. You'll learn how to define effect functions, manage effect dependencies, and handle cleanup functions for better performance and synchronization. The session also introduces different scenarios where `useEffect` is useful, such as fetching data on component mount or on changes in props or state.",
+    "skills": [
+      "Effects in React",
+      "useEffect",
+      "Effect Dependencies",
+      "Cleanup Function",
+      "How to Fetch Data in React"
+    ]
+  },
+  {
+    "title": "React with Local Storage",
+    "category": "React",
+    "short": "Learn to use the Web Storage API to persist data in the browser and work with `localStorage` in React apps.",
+    "long": "This session introduces the Web Storage API, focusing on `localStorage` to store data persistently in the browser across sessions. It covers how to store, retrieve, remove, and clear data in `localStorage`, as well as handling complex data with JSON serialization. The session also explains how to integrate `localStorage` with React state for persistence and introduces the `use-local-storage-state` library as an easy way to handle state with `localStorage`. Additionally, you'll learn the basics of creating React custom hooks for abstraction.",
+    "skills": [
+      "The Web Storage API",
+      "Storing Data",
+      "Retrieving Data",
+      "Removing Data",
+      "Clearing All Data",
+      "Storing Complex Data",
+      "Helper Functions",
+      "React with Local Storage",
+      "use-local-storage-state",
+      "React Custom Hooks"
+    ]
+  },
+  {
+    "title": "React Custom Hooks",
+    "category": "React",
+    "short": "Learn how to create and use custom hooks in React to abstract stateful logic and reuse functionality across components.",
+    "long": "This session covers creating custom hooks in React, which are functions that start with 'use' and encapsulate stateful logic, such as managing state or synchronizing with window events. Custom hooks can return single values, arrays, or objects, and may accept parameters for flexibility. Examples include hooks for counters, fetching data, and managing state in various formats. The session also discusses when it's appropriate to create custom hooks and how to structure them for reuse across multiple components.",
+    "skills": [
+      "Introduction",
+      "Counter Example",
+      "Custom Hook Return Values",
+      "Hook Parameters",
+      "Hooks and Modules"
+    ]
+  },
+  {
+    "title": "React Component Testing",
+    "category": "React",
+    "short": "Learn how to write and run component tests in React to ensure functionality, simulate user interactions, and verify UI behavior.",
+    "long": "This session introduces the concept of component testing in React, which focuses on testing individual components by rendering them in isolation, simulating user interactions, and checking the expected output. The session covers how to render components, search for expected elements, simulate user events, and use matchers to formulate expected results using the Testing Library. It also includes information on creating mock functions for testing event handlers and handling Next.js components that use the `useRouter` hook.",
+    "skills": ["Testing Library", "Mocks"]
+  },
+  {
+    "title": "React Styled Components",
+    "category": "React",
+    "short": "Learn how to use styled components to write CSS within JavaScript, with dynamic styling, nested styles, and global styling support.",
+    "long": "This session focuses on using the styled-components library in React, a CSS-in-JS library that allows for writing component-level styles in JavaScript. Topics covered include creating styled components, extending styles for custom components, adapting styles based on props, and utilizing nested styles with pseudoelements and pseudoselectors. The session also covers setting up global styles in Next.js and integrating Google Fonts for improved performance and compliance.",
+    "skills": [
+      "What is CSS-in-JS and why do we use it?",
+      "Styling with styled components"
+    ]
+  },
+  {
+    "title": "React Global State",
+    "category": "React",
+    "short": "Learn about lifting state up, prop drilling, naming conventions with prop drilling, and the concept of global state.",
+    "long": "This session covers how to manage state across components in React, focusing on lifting state up, understanding the challenges of prop drilling, proper naming conventions when passing props and functions, and introducing the concept of global state using state management libraries.",
+    "skills": [
+      "Lifting State Up",
+      "Prop drilling",
+      "Naming conventions for props and functions",
+      "State management libraries"
+    ]
+  },
+  {
+    "title": "React Immutable State",
+    "category": "React",
+    "short": "Learn why you should never mutate state directly, how to work with nested arrays and objects in state, and how to use the `useImmer` hook for managing immutable state in React.",
+    "long": "This session explains the importance of treating state as immutable in React. It covers best practices for updating nested state objects and arrays without direct mutation, and introduces the `useImmer` hook as a convenient way to handle complex state updates.",
+    "skills": [
+      "Never mutate state",
+      "Updating nested states",
+      "Using `immer` in React: `useImmer` hook",
+      "Working with objects in arrays"
+    ]
+  },
+  {
+    "title": "React Data Fetching",
+    "category": "React",
+    "short": "Learn to efficiently fetch and manage data in React using the SWR library.",
+    "long": "This session covers the use of the SWR library for data fetching in React, demonstrating how it simplifies processes like caching, refetching, error handling, and loading state management, compared to using the `useEffect` hook and native `fetch` API. It also explores techniques for integrating local state with server-fetched data.",
+    "skills": [
+      "Why a data fetching library over `useEffect` and `fetch`?",
+      "How to SWR",
+      "Loading and Error State",
+      "Fetch on Interval and Button Click",
+      "Data is Cached",
+      "SWR Response API",
+      "Combine Fetched Data with Local State"
+    ]
+  }
+]
