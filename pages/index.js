@@ -12,6 +12,12 @@ export default function Home() {
   const { data, error } = useSWR("/api/session-data", fetcher);
   const { data: session, status } = useSession();
   console.log("session-data", data);
+
+  // If there is an error during fetching
+  if (error) return <div>Error loading session data.</div>;
+
+  // If data is not available yet, or it's undefined
+  if (!data) return <div>Loading...</div>;
   return (
     <Container>
       {/* Navigation Sidebar left*/}
