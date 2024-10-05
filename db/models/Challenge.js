@@ -1,5 +1,5 @@
 import mongoose from "mongoose";
-import Session from "./Session";
+import Session from "./SessionData";
 
 const { Schema } = mongoose;
 

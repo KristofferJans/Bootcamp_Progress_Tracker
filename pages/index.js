@@ -4,9 +4,14 @@ import { Container, MainContent, Card } from "../components/StyledComponents";
 import Navbar from "@/components/Navbar";
 import Topbar from "@/components/Topbar";
 import StatisticSidebar from "@/components/StatisticsSidebar";
+import useSWR from "swr";
+
+const fetcher = (url) => fetch(url).then((response) => response.json());
 
 export default function Home() {
+  const { data, error } = useSWR("/api/session-data", fetcher);
   const { data: session, status } = useSession();
+  console.log("session-data", data);
   return (
     <Container>
       {/* Navigation Sidebar left*/}
@@ -40,6 +45,7 @@ export default function Home() {
         </div>
 
         <h2 style={{ marginTop: "40px" }}>Finished Challenges</h2>
+        <p>{data[20].title}</p>
         {/* add more content here later*/}
       </MainContent>
 
