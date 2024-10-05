@@ -1,43 +1,43 @@
 [
   {
     "challenge": "<div>-Salad",
-    "session-id": "HTML and the Web",
-    "isCompleted": "false"
+    "sessionName": "HTML and the web",
+    "sessionId": "66ffda5329f71e3b15f8700d"
   },
   {
     "challenge": "Personal Website",
-    "session-id": "HTML and the Web",
-    "isCompleted": "false"
+    "sessionName": "HTML and the web",
+    "session-id": "66ffda5329f71e3b15f8700d"
   },
   {
     "challenge": "Pink Box",
-    "session-id": "CSS Basics",
-    "isCompleted": "false"
+    "sessionName": "CSS Basics",
+    "session-id": "66ffda5329f71e3b15f8700e"
   },
   {
     "challenge": "Pseudo Park",
-    "session-id": "CSS Basics",
-    "isCompleted": "false"
+    "sessionName": "CSS Basics",
+    "session-id": "66ffda5329f71e3b15f8700e"
   },
   {
     "challenge": "Combined Users",
-    "session-id": "CSS Basics",
-    "isCompleted": "false"
+    "sessionName": "CSS Basics",
+    "session-id": "66ffda5329f71e3b15f8700e"
   },
   {
     "challenge": "Playground: Button Style",
-    "session-id": "CSS Basics",
-    "isCompleted": "false"
+    "sessionName": "CSS Basics",
+    "session-id": "66ffda5329f71e3b15f8700e"
   },
   {
     "challenge": "Pokemon Page",
-    "session-id": "CSS Basics",
-    "isCompleted": "false"
+    "sessionName": "CSS Basics",
+    "session-id": "66ffda5329f71e3b15f8700e"
   },
   {
     "challenge": "CSS Diner",
-    "session-id": "CSS Basics",
-    "isCompleted": "false"
+    "sessionName": "CSS Basics",
+    "session-id": "66ffda5329f71e3b15f8700e"
   },
   {
     "challenge": "Absolute Position",
