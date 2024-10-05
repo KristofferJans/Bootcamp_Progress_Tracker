@@ -1,0 +1,737 @@
+[
+  {
+    "challenge": "<div>-Salad",
+    "session-id": "HTML and the Web",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "Personal Website",
+    "session-id": "HTML and the Web",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "Pink Box",
+    "session-id": "CSS Basics",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "Pseudo Park",
+    "session-id": "CSS Basics",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "Combined Users",
+    "session-id": "CSS Basics",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "Playground: Button Style",
+    "session-id": "CSS Basics",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "Pokemon Page",
+    "session-id": "CSS Basics",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "CSS Diner",
+    "session-id": "CSS Basics",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "Absolute Position",
+    "session-id": "CSS Positioning",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "Layout with Position",
+    "session-id": "CSS Positioning",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "Selectors and Cascading Bugs",
+    "session-id": "CSS Structure",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "Custom Properties",
+    "session-id": "CSS Structure",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "Flexbox Navigation",
+    "session-id": "CSS Flexbox",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "Flexbox Profile",
+    "session-id": "CSS Flexbox",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "Continue working on personal website (local challenge)",
+    "session-id": "CSS Flexbox",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "Playground",
+    "session-id": "CSS Responsive",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "Responsive Website",
+    "session-id": "CSS Responsive",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "Quiz App (continue Recap)",
+    "session-id": "Accessibility",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "Grid Garden (online challenge)",
+    "session-id": "CSS Grid",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "Grid Attack (online challenge)",
+    "session-id": "CSS Grid",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "Image Gallery",
+    "session-id": "CSS Grid",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "Service Gallery",
+    "session-id": "CSS Grid",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "Payment Cards",
+    "session-id": "CSS Grid",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "Image Board",
+    "session-id": "CSS Grid",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "Place The Elements",
+    "session-id": "CSS Grid",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "Data for a social media post",
+    "session-id": "JS Variables and Numbers",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "Tip Calculator",
+    "session-id": "JS Variables and Numbers",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "Track Your Savings Goals",
+    "session-id": "JS Variables and Numbers",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "Calculate Circle Area and Circumference",
+    "session-id": "JS Variables and Numbers",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "Simple calculator",
+    "session-id": "JS Basics",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "Console Methods",
+    "session-id": "JS Basics",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "Fix the errors in a Survey App",
+    "session-id": "JS Basics",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "Dark Mode",
+    "session-id": "JS Basics",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "Truthy and Falsy values",
+    "session-id": "JS Conditions and Booleans",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "Teenager check",
+    "session-id": "JS Conditions and Booleans",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "LogType",
+    "session-id": "JS Conditions and Booleans",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "Arrays",
+    "session-id": "JS Objects and Arrays",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "Objects",
+    "session-id": "JS Objects and Arrays",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "Objects and Arrays",
+    "session-id": "JS Objects and Arrays",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "Basic functions",
+    "session-id": "JS Functions",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "Functions with parameters",
+    "session-id": "JS Functions",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "Functions with parameters extra",
+    "session-id": "JS Functions",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "Pizza Analyzer",
+    "session-id": "JS Functions",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "Functions and DOM manipulation",
+    "session-id": "JS Functions",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "Calculations",
+    "session-id": "JS Functions 2",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "Greeting Page",
+    "session-id": "JS Functions 2",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "Progress Bar",
+    "session-id": "JS Functions 2",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "Convert Arrow Functions",
+    "session-id": "JS Functions 2",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "Personal Profile Form",
+    "session-id": "HTML Forms",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "Forms and A11y",
+    "session-id": "HTML Forms",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "Form validation",
+    "session-id": "HTML Forms",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "Input to uppercase",
+    "session-id": "JS Inputs and Strings",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "Input to uppercase and lowercase",
+    "session-id": "JS Inputs and Strings",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "Switch values",
+    "session-id": "JS Inputs and Strings",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "Multiple inputs",
+    "session-id": "JS Inputs and Strings",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "Change Box Appearance Advanced Challenge",
+    "session-id": "JS Inputs and Strings",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "Part 1: Handle Form Submit",
+    "session-id": "JS Forms",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "Part 2: Checkbox Input",
+    "session-id": "JS Forms",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "Part 3: Calculator",
+    "session-id": "JS Forms",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "Toast Messages",
+    "session-id": "JS createElement",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "Social Media Post",
+    "session-id": "JS createElement",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "Product teaser",
+    "session-id": "JS createElement",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "Toast Animations",
+    "session-id": "CSS Animations",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "For Loop and console.log",
+    "session-id": "JS Loops",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "Creating a list",
+    "session-id": "JS Loops",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "Select and Navigation Bar",
+    "session-id": "JS Loops",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "while",
+    "session-id": "JS Loops",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "Stars",
+    "session-id": "JS Loops",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "Bonus: Pixels",
+    "session-id": "JS Loops",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "Named vs. anonymous callback functions 🌶️",
+    "session-id": "JS Callback Functions",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "Callback functions with one argument 🌶️",
+    "session-id": "JS Callback Functions",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "Callback functions with multiple arguments 🌶️🌶️",
+    "session-id": "JS Callback Functions",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "Multiple callback functions 🌶️🌶️",
+    "session-id": "JS Callback Functions",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "Calculating the Total Price 🌶️🌶️",
+    "session-id": "JS Callback Functions",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "Creating a Custom Map Function",
+    "session-id": "JS Callback Functions",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "Color Boxes (forEach)",
+    "session-id": "JS Array Methods",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "map",
+    "session-id": "JS Array Methods",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "filter",
+    "session-id": "JS Array Methods",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "map and filter",
+    "session-id": "JS Array Methods",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "Terrible Template",
+    "session-id": "npm and linting basics",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "Shapes 🌶️",
+    "session-id": "JS Structure",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "Quiz App 🌶️🌶️",
+    "session-id": "JS Structure",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "Space Rocket 🌶️🌶️🌶️",
+    "session-id": "JS Structure",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "Array of Animal Strings 🌶️",
+    "session-id": "JS Array Methods2",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "Array of Animal Objects 🌶️🌶️",
+    "session-id": "JS Array Methods2",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "News Flash 🌶️",
+    "session-id": "JS Array Methods2",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "Fun with Flags 🌶️🌶️",
+    "session-id": "JS Array Methods2",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "Relay Race",
+    "session-id": "JS Async Functions",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "Sleep",
+    "session-id": "JS Async Functions",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "Slot Machine",
+    "session-id": "JS Async Functions",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "Git Conflicts Challenge",
+    "session-id": "Git Advanced (Terminal)",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "GitHub Learning Lab: Manage Merge Conflicts",
+    "session-id": "Git Advanced (Terminal)",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "Star Wars API - Console 🌶️",
+    "session-id": "JS Fetch",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "Star Wars API - Cards 🌶️🌶️",
+    "session-id": "JS Fetch",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "Color Clue Game 🌶️🌶️",
+    "session-id": "JS Fetch",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "Destructuring Objects 🌶️",
+    "session-id": "JS Modern Syntax",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "Destructuring Arrays 🌶️🌶️",
+    "session-id": "JS Modern Syntax",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "Spread and Rest Syntax 🌶️",
+    "session-id": "JS Modern Syntax",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "Retro Coding Challenge (local) 🌶️🌶️",
+    "session-id": "JS Modern Syntax",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "I like animals, don't I?",
+    "session-id": "JS Unit Testing",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "Math Functions",
+    "session-id": "JS Unit Testing",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "People",
+    "session-id": "JS Unit Testing",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "Hello World 🌶️",
+    "session-id": "React Basics",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "Hello World Article 🌶️",
+    "session-id": "React Basics",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "Attributes 🌶️",
+    "session-id": "React Basics",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "Greetings",
+    "session-id": "React Props",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "Calculating the sum",
+    "session-id": "React Props",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "Smiley",
+    "session-id": "React Props",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "Buttons",
+    "session-id": "React Props",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "Buttons and Children 🌶️",
+    "session-id": "React Nesting",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "Fragments 🌶️",
+    "session-id": "React Nesting",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "Navigation 🌶️🌶️🌶️",
+    "session-id": "React Nesting",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "Journal App",
+    "session-id": "React Project Setup",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "Box 🌶️",
+    "session-id": "React State",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "Counter 🌶️",
+    "session-id": "React State",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "Emoji Checker 🌶️🌶️🌶️",
+    "session-id": "React State",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "Journal App Favorite Button 🌶️",
+    "session-id": "React State",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "Fruits 🌶️",
+    "session-id": "React with Arrays",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "Users 🌶️",
+    "session-id": "React with Arrays",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "Journal App Entries Array 🌶️",
+    "session-id": "React with Arrays",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "Colored Number 🌶️",
+    "session-id": "React State 2",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "Table Reservation 🌶️🌶️🌶️",
+    "session-id": "React State 2",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "Favourite Holiday Form 🌶️🌶️🌶️",
+    "session-id": "React State 2",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "Personal Details Form 🌶️🌶️",
+    "session-id": "React State 2",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "Bonus: Fix Triple Count",
+    "session-id": "React State 2",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "Bonus: Fix Conditionally Rendered useState Hook 🌶️",
+    "session-id": "React State 2",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "Adding Animals 🌶️",
+    "session-id": "React State 3",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "Tags, Tags, Tags 🌶️🌶️🌶️",
+    "session-id": "React State 3",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "Journal App with Form Submit 🌶️",
+    "session-id": "React State 3",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "Journal App with Favorite Button and Shared State 🌶️🌶️🌶️",
+    "session-id": "React State 3",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "Journal App with Entries Filter 🌶️",
+    "session-id": "React State 3",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "Pokémon API",
+    "session-id": "React Effects and Fetch",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "Pokémon API with paging",
+    "session-id": "React Effects and Fetch",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "ISS Tracker",
+    "session-id": "React Effects and Fetch",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "API Status and Error Handling",
+    "session-id": "React Effects and Fetch",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "Store stuff in your Browser 🌶️",
+    "session-id": "React with Local Storage",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "Stored Note 🌶️",
+    "session-id": "React with Local Storage",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "Journal App with Local Storage 🌶️",
+    "session-id": "React with Local Storage",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "Dice 🌶️🌶️🌶️",
+    "session-id": "React with Local Storage",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "Scorekeeper",
+    "session-id": "React Component Testing",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "Box",
+    "session-id": "React Styled Components",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "Lord of the Rings App Styling",
+    "session-id": "React Styled Components",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "Smart Home: Lights Control",
+    "session-id": "React Global State",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "Form",
+    "session-id": "React Immutable State",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "Car Race",
+    "session-id": "React Immutable State",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "ISS Tracker",
+    "session-id": "React Data Fetching",
+    "isCompleted": "false"
+  },
+  {
+    "challenge": "Star Wars",
+    "session-id": "React Data Fetching",
+    "isCompleted": "false"
+  }
+]
