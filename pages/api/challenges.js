@@ -3,11 +3,11 @@ import Challenge from "@/db/models/Challenge";
 
 export default async function handler(request, response) {
   await dbConnect();
-  const { id } = request.query;
+  // const { id } = request.query;
 
   if (request.method === "GET") {
-    const challenge = await Challenge.findById(id).populate("sessionId");
-
+    console.log("challeng!!!!");
+    const challenge = await Challenge.find().populate("sessionId");
     if (!challenge) {
       return response.status(404).json({ status: "Not Found" });
     }

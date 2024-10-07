@@ -9,7 +9,7 @@ import useSWR from "swr";
 const fetcher = (url) => fetch(url).then((response) => response.json());
 
 export default function Home() {
-  const { data, error } = useSWR("/api/session-data", fetcher);
+  const { data, error } = useSWR("/api/challenges", fetcher);
   const { data: session, status } = useSession();
   console.log("session-data", data);
 
@@ -51,7 +51,8 @@ export default function Home() {
         </div>
 
         <h2 style={{ marginTop: "40px" }}>Finished Challenges</h2>
-        <p>{data[20].title}</p>
+        <p>{data[0].sessionId.long}</p>
+        {/* <p>{data[20].title}</p>
         <div>
           {data.map((session) => (
             <Card key={session._id}>
@@ -59,7 +60,7 @@ export default function Home() {
               <p>{session.short}</p>
             </Card>
           ))}
-        </div>
+        </div> */}
         {/* add more content here later*/}
       </MainContent>
 
