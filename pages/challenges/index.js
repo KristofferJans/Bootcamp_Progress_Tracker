@@ -1,7 +1,13 @@
 import React from "react";
 import { useSession } from "next-auth/react";
 
-import { Container, MainContent, Card } from "@/components/StyledComponents";
+import {
+  Container,
+  MainContent,
+  Card,
+  GridContainer,
+  GridCard,
+} from "@/components/StyledComponents";
 import Navbar from "@/components/Navbar";
 import Topbar from "@/components/Topbar";
 
@@ -41,17 +47,15 @@ export default function Home() {
           ))}
         </div> */}
         {/* add more content here later*/}
-        <div>
+        <GridContainer>
           {data.map((challenge) => (
-            <Card key={challenge._id} style={{ marginBottom: "20px" }}>
+            <GridCard key={challenge._id} style={{ marginBottom: "20px" }}>
               <h3>Challenge: {challenge.challenge}</h3>
               {/* Check if sessionId is populated */}
-              {challenge.sessionId && (
-                <p>Session Title: {challenge.sessionId.title}</p>
-              )}
-            </Card>
+              {challenge.sessionId && <p>{challenge.sessionId.title}</p>}
+            </GridCard>
           ))}
-        </div>
+        </GridContainer>
       </MainContent>
 
       {/* Stats Sidebar */}

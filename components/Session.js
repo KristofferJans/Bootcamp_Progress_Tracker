@@ -1,31 +1,40 @@
 import useSWR from "swr";
 import { useRouter } from "next/router";
-import { Card } from "./StyledComponents";
+import { Card, GridContainer, DetailsCard } from "./StyledComponents";
 import Link from "next/link";
 
-export default function Product() {
+const fetcher = (url) => fetch(url).then((res) => res.json());
+
+export default function Session() {
   const router = useRouter();
   const { id } = router.query;
 
-  const { data, isLoading } = useSWR(`/api/session-data/${id}`);
+  const { data, error } = useSWR(id ? `/api/${id}` : null, fetcher);
 
-  if (isLoading) {
+  console.log("data", data);
+
+  if (!id) {
     return <h1>Loading...</h1>;
   }
 
+  if (error) {
+    return <h1>Failed to load session</h1>;
+  }
+
   if (!data) {
-    return;
+    return <h1>Loading session details...</h1>;
   }
 
   console.log("session details data", data);
 
   return (
-    <Card>
-      <h2>{data.title}</h2>
+    <DetailsCard>
+      <h1>{data.title}</h1>
+      <p>{data.category}</p>
       <h3>{data.short}</h3>
-      <p>Description: {data.long}</p>
-      <p>Category: {data.category}</p>
-      <Link href="/">Back to all</Link>
-    </Card>
+      <p>{data.long}</p>
+      <p class="summary">Skills: {data.skills}</p>
+      <Link href="/sessions">Back</Link>
+    </DetailsCard>
   );
 }

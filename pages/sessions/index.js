@@ -1,11 +1,18 @@
 import React from "react";
 import { useSession } from "next-auth/react";
 
-import { Container, MainContent, Card } from "@/components/StyledComponents";
+import {
+  Container,
+  MainContent,
+  Card,
+  GridCard,
+  GridContainer,
+} from "@/components/StyledComponents";
 import Navbar from "@/components/Navbar";
 import Topbar from "@/components/Topbar";
 
 import useSWR from "swr";
+import Link from "next/link";
 
 const fetcher = (url) => fetch(url).then((response) => response.json());
 
@@ -14,10 +21,8 @@ export default function Home() {
   const { data: session, status } = useSession();
   console.log("session-data", data);
 
-  // If there is an error during fetching
   if (error) return <div>Error loading session data.</div>;
 
-  // If data is not available yet, or it's undefined
   if (!data) return <div>Loading...</div>;
   return (
     <Container>
@@ -41,15 +46,25 @@ export default function Home() {
           ))}
         </div> */}
         {/* add more content here later*/}
-        <div>
+        <GridContainer>
           {data.map((session) => (
-            <Card key={session._id} style={{ marginBottom: "20px" }}>
-              <h3>Session: {session.title}</h3>
+            <Link
+              key={session._id}
+              href={`/${session._id}`}
+              passHref
+              legacyBehavior
+            >
+              <GridCard
+                key={session._id}
+                style={{ marginBottom: "20px", cursor: "pointer" }}
+              >
+                <h3>{session.title}</h3>
 
-              <p>Description: {session.short}</p>
-            </Card>
+                <p>{session.short}</p>
+              </GridCard>
+            </Link>
           ))}
-        </div>
+        </GridContainer>
       </MainContent>
 
       {/* Stats Sidebar */}
