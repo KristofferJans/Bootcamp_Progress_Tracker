@@ -9,6 +9,7 @@ const sessionDataSchema = new Schema(
     short: { type: String, required: true },
     long: { type: String, required: true },
     skills: { type: [String], required: true },
+    challenges: [{ type: Schema.Types.ObjectId, ref: "Challenge" }],
   },
   { collection: "session-data" } // Explicitly refer to the correct collection
 );

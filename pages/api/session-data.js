@@ -6,7 +6,7 @@ export default async function handler(request, response) {
 
   if (request.method === "GET") {
     try {
-      const sessionData = await SessionData.find({}); // Fetch all session-data by using ({})
+      const sessionData = await SessionData.find({}).populate("challenges"); // Fetch all session-data by using ({})
       console.log("Fetched session-data:", sessionData); // Debug the fetched data
       return response.status(200).json(sessionData);
     } catch (error) {

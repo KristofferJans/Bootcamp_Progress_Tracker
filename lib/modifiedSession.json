@@ -1,0 +1,78 @@
+[
+  {
+    "title": "HTML and the web",
+    "category": "HTML",
+    "short": "Understand how the web works and learn the basics of writing HTML with semantic elements.",
+    "long": "This session covers how the web operates through client-server communication and introduces the basics of HTML. It includes understanding the role of different HTML elements, their attributes, and how to use semantic HTML to structure a web page.",
+    "skills": ["How the web works", "HTML basics", "Structuring a Website"],
+    "challenges": ["67040b4f110cd5a68de9e4e7", "67040b4f110cd5a68de9e4e8"]
+  },
+  {
+    "title": "CSS Basics",
+    "category": "CSS",
+    "short": "Learn the fundamentals of CSS, including syntax, selectors, box model, and linking stylesheets to HTML.",
+    "long": "This session covers the basics of CSS, teaching you how to add styles to HTML elements using selectors and declarations. You'll learn about the CSS box model, the difference between inline and block elements, and how to link external stylesheets to HTML. The session also provides an overview of how the cascading mechanism works in CSS and its syntax.",
+    "skills": [
+      "Linking Stylesheets",
+      "CSS syntax",
+      "Selectors",
+      "CSS Properties",
+      "Combining Selectors",
+      "Inheritance",
+      "Box Model",
+      "Inline and block elements"
+    ]
+  },
+  {
+    "title": "CSS Positioning",
+    "category": "CSS",
+    "short": "Learn about different CSS positioning types, how to define element positions, and understand the basics of z-index.",
+    "long": "This session covers the various ways to position HTML elements using CSS. It explains the different positioning types such as static, relative, absolute, fixed, and sticky, and how they affect an element's placement within a document. Additionally, it introduces the concept of z-index to control the stacking order of positioned elements.",
+    "skills": [
+      "Positioning: static",
+      "Positioning: relative",
+      "Positioning: absolute",
+      "Positioning: fixed",
+      "Positioning: sticky",
+      "Using position properties (top, bottom, right, left)",
+      "Understanding z-index"
+    ]
+  },
+  {
+    "title": "CSS Structure",
+    "category": "CSS",
+    "short": "Learn how to structure CSS effectively to handle conflicts and improve maintainability.",
+    "long": "This session covers the CSS cascade, specificity, best practices for structuring CSS, and using custom properties for reusable styles.",
+    "skills": [
+      "CSS Cascade",
+      "Specificity",
+      "CSS Structure best practices",
+      "CSS practical strategies",
+      "Custom properties (CSS variables)"
+    ]
+  },
+  {
+    "title": "CSS Flexbox",
+    "category": "CSS",
+    "short": "Learn how to use CSS Flexbox to layout elements effectively and make websites more responsive.",
+    "long": "This session covers the use of CSS Flexbox for aligning and distributing space among items in a container. You will learn about its functionality in laying out elements horizontally or vertically, how it adapts to different screen sizes, and how to use key flex properties like justify-content, align-items, gap, flex-direction, and flex-wrap.",
+    "skills": [
+      "Flexbox",
+      "Important Flex Properties",
+      "Flex-direction",
+      "Flex-wrap"
+    ]
+  },
+  {
+    "title": "CSS Responsive",
+    "category": "CSS",
+    "short": "Learn how to make your web designs responsive for various devices using mobile-first design, responsive units, and media queries.",
+    "long": "This session introduces the concept of responsive design, emphasizing mobile-first design principles, the use of responsive units like `vh`, `vw`, `em`, and `rem`, and how to use media queries to create adaptable styles for different devices and orientations.",
+    "skills": [
+      "Mobile First Design",
+      "Responsive Units",
+      "Media Queries",
+      "Showing different images based on media queries"
+    ]
+  }
+]

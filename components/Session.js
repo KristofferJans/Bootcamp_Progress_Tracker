@@ -1,6 +1,6 @@
 import useSWR from "swr";
 import { useRouter } from "next/router";
-import { Card, GridContainer, DetailsCard } from "./StyledComponents";
+import { GridCard, GridContainer, DetailsCard } from "./StyledComponents";
 import Link from "next/link";
 
 const fetcher = (url) => fetch(url).then((res) => res.json());
@@ -28,13 +28,27 @@ export default function Session() {
   console.log("session details data", data);
 
   return (
-    <DetailsCard>
-      <h1>{data.title}</h1>
-      <p>{data.category}</p>
-      <h3>{data.short}</h3>
-      <p>{data.long}</p>
-      <p class="summary">Skills: {data.skills}</p>
-      <Link href="/sessions">Back</Link>
-    </DetailsCard>
+    <>
+      <DetailsCard>
+        <h1>{data.title}</h1>
+        <p>{data.category}</p>
+        <h3>{data.short}</h3>
+        <p>{data.long}</p>
+        <p class="summary">Skills: {data.skills}</p>
+        <Link href="/sessions">Back</Link>
+      </DetailsCard>
+      {data.challenges && data.challenges.length > 0 ? (
+        <GridContainer>
+          {data.challenges.map((challenge) => (
+            <GridCard key={challenge._id}>
+              <h3>{challenge.challenge}</h3>
+              <p className="summary">Description of challenge.</p>
+            </GridCard>
+          ))}
+        </GridContainer>
+      ) : (
+        <p>No challenges for this session.</p>
+      )}
+    </>
   );
 }

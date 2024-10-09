@@ -735,3 +735,83 @@
     "isCompleted": "false"
   }
 ]
+
+
+[
+   {
+      "challenge": "<div>-Salad",
+      "sessionName": "HTML and the web",
+      
+    },
+    {
+      "challenge": "Personal Website",
+      "sessionName": "HTML and the web",
+      
+    },
+    {
+      "challenge": "Pink Box",
+      "sessionName": "CSS Basics",
+      
+    },
+    {
+      "challenge": "Pseudo Park",
+      "sessionName": "CSS Basics",
+      
+    },
+    {
+      "challenge": "Combined Users",
+      "sessionName": "CSS Basics",
+      
+    },
+    {
+      "challenge": "Playground: Button Style",
+      "sessionName": "CSS Basics",
+      
+    },
+    {
+      "challenge": "Pokemon Page",
+      "sessionName": "CSS Basics",
+      
+    },
+    {
+      "challenge": "CSS Diner",
+      "sessionName": "CSS Basics",
+      
+    },
+    {
+      "challenge": "Absolute Position",
+      "sessionName": "CSS Positioning",
+    },
+    {
+      "challenge": "Layout with Position",
+      "sessionName": "CSS Positioning",
+    },
+    {
+      "challenge": "Selectors and Cascading Bugs",
+      "sessionName": "CSS Structure",
+    },
+    {
+      "challenge": "Custom Properties",
+      "sessionName": "CSS Structure",
+    },
+    {
+      "challenge": "Flexbox Navigation",
+      "sessionName": "CSS Flexbox",
+    },
+    {
+      "challenge": "Flexbox Profile",
+      "sessionName": "CSS Flexbox",
+    },
+    {
+      "challenge": "Continue working on personal website (local challenge)",
+      "sessionName": "CSS Flexbox",
+    },
+    {
+      "challenge": "Playground",
+      "sessionName": "CSS Responsive",
+    },
+    {
+      "challenge": "Responsive Website",
+      "sessionName": "CSS Responsive",
+    },
+]
