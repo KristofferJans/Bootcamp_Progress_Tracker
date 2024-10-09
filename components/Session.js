@@ -1,6 +1,11 @@
 import useSWR from "swr";
 import { useRouter } from "next/router";
-import { GridCard, GridContainer, DetailsCard } from "./StyledComponents";
+import {
+  GridCard,
+  GridContainer,
+  DetailsCard,
+  StatusButton,
+} from "./StyledComponents";
 import Link from "next/link";
 
 const fetcher = (url) => fetch(url).then((res) => res.json());
@@ -43,6 +48,10 @@ export default function Session() {
             <GridCard key={challenge._id}>
               <h3>{challenge.challenge}</h3>
               <p className="summary">Description of challenge.</p>
+              <StatusButton>Not Started</StatusButton>
+              <StatusButton>Started</StatusButton>
+              <StatusButton>Open Pull Request</StatusButton>
+              <StatusButton>Merged</StatusButton>
             </GridCard>
           ))}
         </GridContainer>
