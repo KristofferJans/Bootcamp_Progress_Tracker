@@ -195,6 +195,6 @@ export const StatusButton = styled.button`
   border-radius: 5px;
 
   &:hover {
-    background-color: #692bc9;
+    background-color: green;
   }
 `;
