@@ -7,6 +7,7 @@ import {
   Card,
   GridContainer,
   GridCard,
+  StatusButton,
 } from "@/components/StyledComponents";
 import Navbar from "@/components/Navbar";
 import Topbar from "@/components/Topbar";
@@ -50,9 +51,12 @@ export default function Home() {
         <GridContainer>
           {data.map((challenge) => (
             <GridCard key={challenge._id} style={{ marginBottom: "20px" }}>
-              <h3>Challenge: {challenge.challenge}</h3>
+              <h3>{challenge.challenge}</h3>
               {/* Check if sessionId is populated */}
-              {challenge.sessionId && <p>{challenge.sessionId.title}</p>}
+              <StatusButton>Not Started</StatusButton>
+              <StatusButton>Started</StatusButton>
+              <StatusButton>Open Pull Request</StatusButton>
+              <StatusButton>Merged</StatusButton>
             </GridCard>
           ))}
         </GridContainer>
