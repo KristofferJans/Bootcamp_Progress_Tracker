@@ -5,7 +5,7 @@
     "short": "Understand how the web works and learn the basics of writing HTML with semantic elements.",
     "long": "This session covers how the web operates through client-server communication and introduces the basics of HTML. It includes understanding the role of different HTML elements, their attributes, and how to use semantic HTML to structure a web page.",
     "skills": ["How the web works", "HTML basics", "Structuring a Website"],
-    "challenges": ["67040b4f110cd5a68de9e4e7", "67040b4f110cd5a68de9e4e8"]
+    "challenges": ["67067b58a38e1a4d73d928ca", "67067b58a38e1a4d73d928cb"]
   },
   {
     "title": "CSS Basics",
@@ -21,6 +21,14 @@
       "Inheritance",
       "Box Model",
       "Inline and block elements"
+    ],
+    "challenges": [
+      "67067b58a38e1a4d73d928cc",
+      "67067b58a38e1a4d73d928cd",
+      "67067b58a38e1a4d73d928ce",
+      "67067b58a38e1a4d73d928cf",
+      "67067b58a38e1a4d73d928d0",
+      "67067b58a38e1a4d73d928d1"
     ]
   },
   {
@@ -36,7 +44,8 @@
       "Positioning: sticky",
       "Using position properties (top, bottom, right, left)",
       "Understanding z-index"
-    ]
+    ],
+    "challenges": ["67067b58a38e1a4d73d928d2", "67067b58a38e1a4d73d928d3"]
   },
   {
     "title": "CSS Structure",
@@ -49,7 +58,8 @@
       "CSS Structure best practices",
       "CSS practical strategies",
       "Custom properties (CSS variables)"
-    ]
+    ],
+    "challenges": ["67067b58a38e1a4d73d928d4", "67067b58a38e1a4d73d928d5"]
   },
   {
     "title": "CSS Flexbox",
@@ -61,6 +71,11 @@
       "Important Flex Properties",
       "Flex-direction",
       "Flex-wrap"
+    ],
+    "challenges": [
+      "67067b58a38e1a4d73d928d6",
+      "67067b58a38e1a4d73d928d7",
+      "67067b58a38e1a4d73d928d8"
     ]
   },
   {
@@ -73,6 +88,7 @@
       "Responsive Units",
       "Media Queries",
       "Showing different images based on media queries"
-    ]
+    ],
+    "challenges": ["67067b58a38e1a4d73d928d9", "67067b58a38e1a4d73d928da"]
   }
 ]
