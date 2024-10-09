@@ -182,3 +182,19 @@ export const DetailsCard = styled.div`
     color: #777;
   }
 `;
+
+// Progress Button
+
+export const StatusButton = styled.button`
+  background-color: ${(props) => (props.isActive ? "#8e44ad" : "#f5f5f5")};
+  color: ${(props) => (props.isActive ? "#fff" : "#333")};
+  border: 1px solid #8e44ad;
+  padding: 10px;
+  cursor: pointer;
+  margin: 5px;
+  border-radius: 5px;
+
+  &:hover {
+    background-color: #692bc9;
+  }
+`;
