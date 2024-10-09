@@ -7,7 +7,6 @@ const challengeSchema = new Schema(
   {
     challenge: { type: String, required: true },
     sessionName: { type: String, required: true },
-    sessionId: { type: Schema.Types.ObjectId, ref: "SessionData" },
   },
   { collection: "challenges-data" } // Explicitly refer to the correct collection
 );

@@ -7,7 +7,7 @@ export default async function handler(request, response) {
 
   if (request.method === "GET") {
     console.log("challeng!!!!");
-    const challenge = await Challenge.find().populate("sessionId");
+    const challenge = await Challenge.find();
     if (!challenge) {
       return response.status(404).json({ status: "Not Found" });
     }
