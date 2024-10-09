@@ -101,3 +101,84 @@ export const CircularProgress = styled.div`
   color: #8e44ad;
   font-weight: bold;
 `;
+
+// Grid Components
+
+export const GridContainer = styled.div`
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  justify-content: space-evenly;
+`;
+
+export const GridCard = styled.div`
+  background-color: #f5f5f5;
+  color: #333;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #8e44ad;
+  }
+
+  p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #666;
+  }
+
+  .summary {
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 10px;
+  }
+
+  .details {
+    font-size: 0.875rem;
+    color: #777;
+  }
+`;
+
+export const DetailsCard = styled.div`
+  background-color: #f5f5f5;
+  color: #333;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #8e44ad;
+  }
+
+  p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #666;
+  }
+
+  .summary {
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 10px;
+  }
+
+  .details {
+    font-size: 0.875rem;
+    color: #777;
+  }
+`;
