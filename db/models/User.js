@@ -2,26 +2,21 @@ import mongoose from "mongoose";
 
 const { Schema } = mongoose;
 
-const progressSchema = new mongoose.Schema({
-  challenge_id: { type: Schema.Types.ObjectId, required: false },
-  points: { type: Number, min: 1, max: 4, required: false },
-});
-
 const userSchema = new Schema(
   {
     name: { type: String, required: true },
     email: { type: String, required: true, unique: true },
-    name: { type: String, required: true },
-    emailVerified: { type: String, required: true }, //??
+    image: { type: String, required: true },
+    emailVerified: { type: Date, default: null }, //??
     finishedChallenges: [{ type: Schema.Types.ObjectId, ref: "Challenge" }],
     progress: [
       {
         challengeId: {
           type: Schema.Types.ObjectId,
-          required: false,
+
           ref: "Challenge",
         },
-        progressLevel: { type: Number, min: 1, max: 4, required: false },
+        progressLevel: { type: Number, min: 1, max: 4 },
       },
     ],
   },
