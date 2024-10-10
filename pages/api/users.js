@@ -10,6 +10,11 @@ export default async function handler(request, response) {
       const userData = await User.findById(id).populate(
         "finishedChallenges progress.challengeId"
       );
+
+      if (!userData) {
+        return response.status(404).json({ message: "User not found" });
+      }
+
       console.log("Fetched User-Data", userData);
       return response.status(200).json(userData);
     } catch (error) {
