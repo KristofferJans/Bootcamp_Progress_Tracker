@@ -12,7 +12,17 @@ const userSchema = new Schema({
   email: { type: String, required: true, unique: true },
   name: { type: String, required: true },
   emailVerified: { type: String, required: true }, //??
-  progress: { type: [progressSchema], default: [] },
+  finishedChallenges: [{ type: Schema.Types.ObjectId, ref: "Challenge" }],
+  progress: [
+    {
+      challenge_id: {
+        type: Schema.Types.ObjectId,
+        required: false,
+        ref: "Challenge",
+      },
+      progressLevel: { type: Number, min: 1, max: 4, required: false },
+    },
+  ],
 });
 
 const User = mongoose.models.User || mongoose.model("User", userSchema);
