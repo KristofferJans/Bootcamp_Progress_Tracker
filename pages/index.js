@@ -51,16 +51,7 @@ export default function Home() {
         </div>
 
         <h2 style={{ marginTop: "40px" }}>Finished Challenges</h2>
-        {/* <p>{data[0].sessionId.long}</p> */}
-        {/* <p>{data[20].title}</p>
-        <div>
-          {data.map((session) => (
-            <Card key={session._id}>
-              <h3>{session.title}</h3>
-              <p>{session.short}</p>
-            </Card>
-          ))}
-        </div> */}
+
         {/* add more content here later*/}
       </MainContent>
 
