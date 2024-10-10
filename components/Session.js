@@ -7,10 +7,13 @@ import {
   StatusButton,
 } from "./StyledComponents";
 import Link from "next/link";
+import { useSession } from "next-auth/react";
 
 const fetcher = (url) => fetch(url).then((res) => res.json());
 
 export default function Session() {
+  const { data: session, status } = useSession();
+
   const router = useRouter();
   const { id } = router.query;
 
@@ -32,6 +35,17 @@ export default function Session() {
 
   console.log("session details data", data);
 
+  async function updateProgress(challengeId, level) {
+    console.log("update progress 44", session.user.userId);
+    const response = await fetch(`/api/users?id=${session.user.userId}`, {
+      method: "PATCH",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ challengeId: challengeId, progressLevel: level }),
+    });
+  }
+
   return (
     <>
       <DetailsCard>
@@ -49,9 +63,15 @@ export default function Session() {
               <h3>{challenge.challenge}</h3>
               <p className="summary">Description of challenge.</p>
               <StatusButton>Not Started</StatusButton>
-              <StatusButton>Started</StatusButton>
-              <StatusButton>Open Pull Request</StatusButton>
-              <StatusButton>Merged</StatusButton>
+              <StatusButton onClick={() => updateProgress(challenge._id, 2)}>
+                Started
+              </StatusButton>
+              <StatusButton onClick={() => updateProgress(challenge._id, 3)}>
+                Open Pull Request
+              </StatusButton>
+              <StatusButton onClick={() => updateProgress(challenge._id, 4)}>
+                Merged
+              </StatusButton>
             </GridCard>
           ))}
         </GridContainer>
