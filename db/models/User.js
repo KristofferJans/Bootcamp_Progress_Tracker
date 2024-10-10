@@ -16,7 +16,7 @@ const userSchema = new Schema(
     finishedChallenges: [{ type: Schema.Types.ObjectId, ref: "Challenge" }],
     progress: [
       {
-        challenge_id: {
+        challengeId: {
           type: Schema.Types.ObjectId,
           required: false,
           ref: "Challenge",
