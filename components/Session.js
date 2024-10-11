@@ -67,24 +67,39 @@ export default function Session() {
       </DetailsCard>
       {data.challenges && data.challenges.length > 0 ? (
         <GridContainer>
-          {data.challenges.map((challenge) => (
-            <GridCard key={challenge._id}>
-              <h3>{challenge.challenge}</h3>
-              <p className="summary">Description of challenge.</p>
-              <StatusButton onClick={() => updateProgress(challenge._id, 1)}>
-                Not Started
-              </StatusButton>
-              <StatusButton onClick={() => updateProgress(challenge._id, 2)}>
-                Started
-              </StatusButton>
-              <StatusButton onClick={() => updateProgress(challenge._id, 3)}>
-                Open Pull Request
-              </StatusButton>
-              <StatusButton onClick={() => updateProgress(challenge._id, 4)}>
-                Merged
-              </StatusButton>
-            </GridCard>
-          ))}
+          {data.challenges.map((challenge) => {
+            const progressLevel = getProgress(challenge._id);
+            return (
+              <GridCard key={challenge._id}>
+                <h3>{challenge.challenge}</h3>
+                <p className="summary">Description of challenge.</p>
+                <StatusButton
+                  isActive={progressLevel === 1}
+                  onClick={() => updateProgress(challenge._id, 1)}
+                >
+                  Not Started
+                </StatusButton>
+                <StatusButton
+                  isActive={progressLevel === 2}
+                  onClick={() => updateProgress(challenge._id, 2)}
+                >
+                  Started
+                </StatusButton>
+                <StatusButton
+                  isActive={progressLevel === 3}
+                  onClick={() => updateProgress(challenge._id, 3)}
+                >
+                  Open Pull Request
+                </StatusButton>
+                <StatusButton
+                  isActive={progressLevel === 4}
+                  onClick={() => updateProgress(challenge._id, 4)}
+                >
+                  Merged
+                </StatusButton>
+              </GridCard>
+            );
+          })}
         </GridContainer>
       ) : (
         <p>No challenges for this session.</p>

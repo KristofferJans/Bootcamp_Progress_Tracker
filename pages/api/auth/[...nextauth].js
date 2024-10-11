@@ -22,8 +22,7 @@ export const authOptions = {
 
   callbacks: {
     async session({ session, user }) {
-      // console.log(token.userId);
-      session.user.userId = user.userId;
+      session.user.userId = user.id;
       session.user.finishedChallenges = user.finishedChallenges;
       session.user.progress = user.progress;
       return session;
