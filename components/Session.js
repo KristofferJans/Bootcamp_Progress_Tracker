@@ -46,6 +46,13 @@ export default function Session() {
     });
   }
 
+  function getProgress(challengeId) {
+    const challengeProgress = session.user.progress?.find(
+      (progress) => progress.challengeId.toString() === challengeId
+    );
+    return challengeProgress?.progressLevel || 1; // Default to 1 if no progress exists
+  }
+
   return (
     <>
       <DetailsCard>
