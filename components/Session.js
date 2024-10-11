@@ -69,7 +69,9 @@ export default function Session() {
             <GridCard key={challenge._id}>
               <h3>{challenge.challenge}</h3>
               <p className="summary">Description of challenge.</p>
-              <StatusButton>Not Started</StatusButton>
+              <StatusButton onClick={() => updateProgress(challenge._id, 1)}>
+                Not Started
+              </StatusButton>
               <StatusButton onClick={() => updateProgress(challenge._id, 2)}>
                 Started
               </StatusButton>
