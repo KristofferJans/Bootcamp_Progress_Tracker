@@ -32,6 +32,9 @@ export default async function handler(request, response) {
       }
 
       // Check if the challenge is already in progress
+
+      // Without toString(), the comparison would fail because we're comparing
+      // an ObjectId with a string, which are different types.
       const existingProgress = user.progress.find(
         (progress) => progress.challengeId.toString() === challengeId
       );
