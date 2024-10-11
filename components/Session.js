@@ -19,7 +19,7 @@ export default function Session() {
 
   const { data, error } = useSWR(id ? `/api/${id}` : null, fetcher);
 
-  console.log("data", data);
+  console.log("data-session-details", session);
 
   if (!id) {
     return <h1>Loading...</h1>;
@@ -33,7 +33,7 @@ export default function Session() {
     return <h1>Loading session details...</h1>;
   }
 
-  console.log("session details data", session);
+  // console.log("session details data", session);
 
   async function updateProgress(challengeId, level) {
     console.log("update progress 44", session.user.userId);
@@ -52,6 +52,8 @@ export default function Session() {
     );
     return challengeProgress?.progressLevel || 1; // Default to 1 if no progress exists
   }
+
+  console.log("user-details", session?.user);
 
   return (
     <>

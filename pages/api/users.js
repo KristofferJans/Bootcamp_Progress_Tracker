@@ -7,7 +7,7 @@ export default async function handler(request, response) {
 
   if (request.method === "GET") {
     try {
-      const userData = await User.findById(id);
+      const userData = await User.findById(id).populate("finishedChallenges");
 
       if (!userData) {
         return response.status(404).json({ message: "User not found" });

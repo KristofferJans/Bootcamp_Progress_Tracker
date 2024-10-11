@@ -22,7 +22,10 @@ export const authOptions = {
 
   callbacks: {
     async session({ session, user }) {
-      session.user.userId = user.id;
+      // console.log(token.userId);
+      session.user.userId = user.userId;
+      session.user.finishedChallenges = user.finishedChallenges;
+      session.user.progress = user.progress;
       return session;
     },
   },
