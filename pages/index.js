@@ -13,6 +13,9 @@ export default function Home() {
   const { data: session, status } = useSession();
   console.log("session-data", data);
 
+  // const userId = session?.user?.userId;
+  // const { data, error } = useSWR('/api/users?id=${}', fetcher);
+
   // If there is an error during fetching
   if (error) return <div>Error loading session data.</div>;
 
