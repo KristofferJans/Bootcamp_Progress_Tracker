@@ -17,7 +17,7 @@ export default function Session() {
   const router = useRouter();
   const { id } = router.query;
 
-  const { data, error } = useSWR(id ? `/api/${id}` : null, fetcher);
+  const { data, error, mutate } = useSWR(id ? `/api/${id}` : null, fetcher);
 
   console.log("data-session-details", session);
 
@@ -44,6 +44,10 @@ export default function Session() {
       },
       body: JSON.stringify({ challengeId: challengeId, progressLevel: level }),
     });
+
+    if (response.ok) {
+      console.log("RESPONSE OK");
+    }
   }
 
   function getProgress(challengeId) {
