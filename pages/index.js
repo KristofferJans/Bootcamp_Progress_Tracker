@@ -13,6 +13,9 @@ export default function Home() {
   const { data: session, status } = useSession();
   console.log("session-data", data);
 
+  // const userId = session?.user?.userId;
+  // const { data, error } = useSWR('/api/users?id=${}', fetcher);
+
   // If there is an error during fetching
   if (error) return <div>Error loading session data.</div>;
 
@@ -51,16 +54,7 @@ export default function Home() {
         </div>
 
         <h2 style={{ marginTop: "40px" }}>Finished Challenges</h2>
-        {/* <p>{data[0].sessionId.long}</p> */}
-        {/* <p>{data[20].title}</p>
-        <div>
-          {data.map((session) => (
-            <Card key={session._id}>
-              <h3>{session.title}</h3>
-              <p>{session.short}</p>
-            </Card>
-          ))}
-        </div> */}
+
         {/* add more content here later*/}
       </MainContent>
 

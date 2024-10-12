@@ -1,17 +1,25 @@
 import useSWR from "swr";
 import { useRouter } from "next/router";
-import { GridCard, GridContainer, DetailsCard } from "./StyledComponents";
+import {
+  GridCard,
+  GridContainer,
+  DetailsCard,
+  StatusButton,
+} from "./StyledComponents";
 import Link from "next/link";
+import { useSession } from "next-auth/react";
 
 const fetcher = (url) => fetch(url).then((res) => res.json());
 
 export default function Session() {
+  const { data: session, status } = useSession();
+
   const router = useRouter();
   const { id } = router.query;
 
-  const { data, error } = useSWR(id ? `/api/${id}` : null, fetcher);
+  const { data, error, mutate } = useSWR(id ? `/api/${id}` : null, fetcher);
 
-  console.log("data", data);
+  console.log("data-session-details", session);
 
   if (!id) {
     return <h1>Loading...</h1>;
@@ -25,7 +33,31 @@ export default function Session() {
     return <h1>Loading session details...</h1>;
   }
 
-  console.log("session details data", data);
+  // console.log("session details data", session);
+
+  async function updateProgress(challengeId, level) {
+    console.log("update progress 44", session.user.userId);
+    const response = await fetch(`/api/users?id=${session.user.userId}`, {
+      method: "PATCH",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ challengeId: challengeId, progressLevel: level }),
+    });
+
+    if (response.ok) {
+      console.log("RESPONSE OK");
+    }
+  }
+
+  function getProgress(challengeId) {
+    const challengeProgress = session.user.progress?.find(
+      (progress) => progress.challengeId.toString() === challengeId
+    );
+    return challengeProgress?.progressLevel || 1; // Default to 1 if no progress exists
+  }
+
+  console.log("user-details", session?.user);
 
   return (
     <>
@@ -39,12 +71,39 @@ export default function Session() {
       </DetailsCard>
       {data.challenges && data.challenges.length > 0 ? (
         <GridContainer>
-          {data.challenges.map((challenge) => (
-            <GridCard key={challenge._id}>
-              <h3>{challenge.challenge}</h3>
-              <p className="summary">Description of challenge.</p>
-            </GridCard>
-          ))}
+          {data.challenges.map((challenge) => {
+            const progressLevel = getProgress(challenge._id);
+            return (
+              <GridCard key={challenge._id}>
+                <h3>{challenge.challenge}</h3>
+                <p className="summary">Description of challenge.</p>
+                <StatusButton
+                  isActive={progressLevel === 1}
+                  onClick={() => updateProgress(challenge._id, 1)}
+                >
+                  Not Started
+                </StatusButton>
+                <StatusButton
+                  isActive={progressLevel === 2}
+                  onClick={() => updateProgress(challenge._id, 2)}
+                >
+                  Started
+                </StatusButton>
+                <StatusButton
+                  isActive={progressLevel === 3}
+                  onClick={() => updateProgress(challenge._id, 3)}
+                >
+                  Open Pull Request
+                </StatusButton>
+                <StatusButton
+                  isActive={progressLevel === 4}
+                  onClick={() => updateProgress(challenge._id, 4)}
+                >
+                  Merged
+                </StatusButton>
+              </GridCard>
+            );
+          })}
         </GridContainer>
       ) : (
         <p>No challenges for this session.</p>
