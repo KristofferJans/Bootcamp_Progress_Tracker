@@ -5,6 +5,7 @@ import Navbar from "@/components/Navbar";
 import Topbar from "@/components/Topbar";
 import StatisticSidebar from "@/components/StatisticsSidebar";
 import useSWR from "swr";
+import CircularProgressBar from "@/components/CircularProgressBar";
 
 const fetcher = (url) => fetch(url).then((response) => response.json());
 
@@ -21,6 +22,8 @@ export default function Home() {
 
   // If data is not available yet, or it's undefined
   if (!data) return <div>Loading...</div>;
+
+  const progressPercentage = 20;
   return (
     <Container>
       {/* Navigation Sidebar left*/}
@@ -56,6 +59,11 @@ export default function Home() {
         <h2 style={{ marginTop: "40px" }}>Finished Challenges</h2>
 
         {/* add more content here later*/}
+
+        <div className="App">
+          <h1>Animating Circular Progress Bar</h1>
+          <CircularProgressBar percent={progressPercentage} />
+        </div>
       </MainContent>
 
       {/* Stats Sidebar */}
