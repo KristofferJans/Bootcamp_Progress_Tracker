@@ -9,18 +9,18 @@ import useSWR from "swr";
 const fetcher = (url) => fetch(url).then((response) => response.json());
 
 export default function Home() {
-  const { data, error } = useSWR("/api/challenges", fetcher);
+  // const { data, error } = useSWR("/api/challenges", fetcher);
   const { data: session, status } = useSession();
-  console.log("session-data", data);
+  console.log("session-data2", session);
 
   // const userId = session?.user?.userId;
   // const { data, error } = useSWR('/api/users?id=${}', fetcher);
 
   // If there is an error during fetching
-  if (error) return <div>Error loading session data.</div>;
+  // if (error) return <div>Error loading session data.</div>;
 
-  // If data is not available yet, or it's undefined
-  if (!data) return <div>Loading...</div>;
+  // // If data is not available yet, or it's undefined
+  // if (!data) return <div>Loading...</div>;
   return (
     <Container>
       {/* Navigation Sidebar left*/}
@@ -40,7 +40,7 @@ export default function Home() {
           }}
         >
           <Card>
-            <h3>10</h3>
+            <h3>{session.user.finishedChallenges.length}</h3>
             <p>Finished Challenges</p>
           </Card>
           <Card>
