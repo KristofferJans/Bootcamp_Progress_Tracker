@@ -14,6 +14,19 @@ export default function Home() {
   const { data: session, status } = useSession();
   console.log("session-data", data);
 
+  const { data: userData, mutate } = useSWR(
+    session ? `/api/users?id=${session?.user?.userId}` : null,
+    fetcher
+  );
+
+  console.log("User-Data-Dasboard", userData);
+
+  const finishedChallenges = userData.finishedChallenges.length;
+  const totalChallenges = data.length;
+  const progressPercentage2 = (finishedChallenges / totalChallenges) * 100;
+
+  console.log("progress", progressPercentage2);
+
   // const userId = session?.user?.userId;
   // const { data, error } = useSWR('/api/users?id=${}', fetcher);
 
@@ -44,7 +57,7 @@ export default function Home() {
           }}
         >
           <Card>
-            <h3>10</h3>
+            <h3>{finishedChallenges}</h3>
             <p>Finished Challenges</p>
           </Card>
           <Card>
@@ -59,7 +72,7 @@ export default function Home() {
 
         <h2 style={{ marginTop: "40px" }}>Progress</h2>
 
-        <CircularProgressBar percent={progressPercentage} />
+        <CircularProgressBar percent={progressPercentage2} />
 
         {/* add more content here later*/}
       </MainContent>
