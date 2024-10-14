@@ -23,7 +23,10 @@ function CircularProgressBar({ percent }) {
           labels={() => null} // No labels on the pie chart itself
           style={{
             data: {
-              fill: ({ datum }) => (datum.y > 30 ? "green" : "red"), // Green if progress > 30%, else red
+              fill: ({ datum }) => {
+                const color = datum.y > 30 ? "green" : "red";
+                return datum.x === 1 ? color : "transparent";
+              },
             },
           }}
         />
