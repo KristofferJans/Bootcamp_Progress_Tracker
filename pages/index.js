@@ -21,8 +21,8 @@ export default function Home() {
 
   console.log("User-Data-Dasboard", userData);
 
-  const finishedChallenges = userData.finishedChallenges.length;
-  const totalChallenges = data.length;
+  const finishedChallenges = userData?.finishedChallenges.length;
+  const totalChallenges = data?.length;
   const progressPercentage2 = (finishedChallenges / totalChallenges) * 100;
 
   console.log("progress", progressPercentage2);
@@ -72,13 +72,13 @@ export default function Home() {
 
         <h2 style={{ marginTop: "40px" }}>Progress</h2>
 
-        <CircularProgressBar percent={progressPercentage2} />
+        {/* <CircularProgressBar percent={progressPercentage2} /> */}
 
         {/* add more content here later*/}
       </MainContent>
 
       {/* Stats Sidebar */}
-      <StatisticSidebar></StatisticSidebar>
+      <StatisticSidebar percent={progressPercentage2}></StatisticSidebar>
     </Container>
   );
 }

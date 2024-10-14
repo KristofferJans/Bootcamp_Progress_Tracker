@@ -11,7 +11,7 @@ function CircularProgressBar({ percent }) {
 
   return (
     <div style={{ width: "400px", height: "400px" }}>
-      <svg viewBox="0 0 400 400" width="100%" height="100%">
+      <svg viewBox="0 0 400 400" width="50%" height="100%">
         <VictoryPie
           standalone={false}
           animate={{ duration: 1000 }}
