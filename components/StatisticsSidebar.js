@@ -3,6 +3,7 @@ import {
   HomeworkCard,
   CircularProgress,
   ProgressSection,
+  ProgressBarContainer,
 } from "./StyledComponents";
 import CircularProgressBar from "./CircularProgressBar";
 
@@ -12,7 +13,9 @@ export default function StatisticSidebar({ percent }) {
       <h2>Level: Coding Beginner</h2>
       <h3>Overall Progress</h3>
 
-      <CircularProgressBar percent={percent} />
+      <ProgressBarContainer>
+        <CircularProgressBar percent={percent} />
+      </ProgressBarContainer>
 
       <ProgressSection>
         <h3>Homework Progress</h3>

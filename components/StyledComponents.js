@@ -198,3 +198,13 @@ export const StatusButton = styled.button`
     background-color: green;
   }
 `;
+
+export const ProgressBarContainer = styled.div`
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+`;
