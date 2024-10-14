@@ -9,6 +9,20 @@ import CircularProgressBar from "@/components/CircularProgressBar";
 
 const fetcher = (url) => fetch(url).then((response) => response.json());
 
+function levelUp(progressPercentage2) {
+  if (progressPercentage2 >= 76) {
+    return "Master";
+  } else if (progressPercentage2 >= 51) {
+    return "Expert";
+  } else if (progressPercentage2 >= 26) {
+    return "Advanced";
+  } else if (progressPercentage2 >= 11) {
+    return "Intermediate";
+  } else {
+    return "Beginner";
+  }
+}
+
 export default function Home() {
   const { data, error } = useSWR("/api/challenges", fetcher);
   const { data: session, status } = useSession();
@@ -35,6 +49,8 @@ export default function Home() {
 
   // If data is not available yet, or it's undefined
   if (!data) return <div>Loading...</div>;
+
+  const userLevel = levelUp(progressPercentage2);
 
   const progressPercentage = 30;
 
@@ -78,7 +94,10 @@ export default function Home() {
       </MainContent>
 
       {/* Stats Sidebar */}
-      <StatisticSidebar percent={progressPercentage2}></StatisticSidebar>
+      <StatisticSidebar
+        percent={progressPercentage2}
+        userLevel={userLevel}
+      ></StatisticSidebar>
     </Container>
   );
 }

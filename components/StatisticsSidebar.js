@@ -7,10 +7,10 @@ import {
 } from "./StyledComponents";
 import CircularProgressBar from "./CircularProgressBar";
 
-export default function StatisticSidebar({ percent }) {
+export default function StatisticSidebar({ percent, userLevel }) {
   return (
     <StatsSidebar>
-      <h2>Level: Coding Beginner</h2>
+      <h2>Level: {userLevel}</h2>
       <h3>Overall Progress</h3>
 
       <ProgressBarContainer>
