@@ -8,18 +8,28 @@ import {
 } from "./StyledComponents";
 import Link from "next/link";
 import { useSession } from "next-auth/react";
+import { useEffect, useState } from "react";
 
 const fetcher = (url) => fetch(url).then((res) => res.json());
 
 export default function Session() {
+  const [progressLevel, setProgressLevel] = useState(null);
   const { data: session, status } = useSession();
 
   const router = useRouter();
   const { id } = router.query;
 
-  const { data, error, mutate } = useSWR(id ? `/api/${id}` : null, fetcher);
+  const { data, error } = useSWR(id ? `/api/${id}` : null, fetcher);
 
-  console.log("data-session-details", session);
+  const { data: userData, mutate } = useSWR(
+    session ? `/api/users?id=${session?.user?.userId}` : null,
+    fetcher
+  );
+  console.log("userData", userData);
+  // console.log("data-session-details", session);
+  useEffect(() => {
+    if (userData) setProgressLevel(userData?.progress);
+  }, [userData]);
 
   if (!id) {
     return <h1>Loading...</h1>;
@@ -47,11 +57,12 @@ export default function Session() {
 
     if (response.ok) {
       console.log("RESPONSE OK");
+      mutate();
     }
   }
 
   function getProgress(challengeId) {
-    const challengeProgress = session.user.progress?.find(
+    const challengeProgress = progressLevel?.find(
       (progress) => progress.challengeId.toString() === challengeId
     );
     return challengeProgress?.progressLevel || 1; // Default to 1 if no progress exists
@@ -79,25 +90,33 @@ export default function Session() {
                 <p className="summary">Description of challenge.</p>
                 <StatusButton
                   isActive={progressLevel === 1}
-                  onClick={() => updateProgress(challenge._id, 1)}
+                  onClick={() => {
+                    updateProgress(challenge._id, 1);
+                  }}
                 >
                   Not Started
                 </StatusButton>
                 <StatusButton
                   isActive={progressLevel === 2}
-                  onClick={() => updateProgress(challenge._id, 2)}
+                  onClick={() => {
+                    updateProgress(challenge._id, 2);
+                  }}
                 >
                   Started
                 </StatusButton>
                 <StatusButton
                   isActive={progressLevel === 3}
-                  onClick={() => updateProgress(challenge._id, 3)}
+                  onClick={() => {
+                    updateProgress(challenge._id, 3);
+                  }}
                 >
                   Open Pull Request
                 </StatusButton>
                 <StatusButton
                   isActive={progressLevel === 4}
-                  onClick={() => updateProgress(challenge._id, 4)}
+                  onClick={() => {
+                    updateProgress(challenge._id, 4);
+                  }}
                 >
                   Merged
                 </StatusButton>
