@@ -3,9 +3,9 @@ import styled from "styled-components";
 // Layout Container
 export const Container = styled.div`
   display: flex;
-  height: 100vh;
   width: 100vw;
   background-color: #f0f0f0;
+  overflow: hidden;
 `;
 
 // Sidebar Component
@@ -16,6 +16,10 @@ export const Sidebar = styled.div`
   color: white;
   display: flex;
   flex-direction: column;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow-y: auto;
 `;
 
 // Navigation Buttons inside Sidebar
@@ -50,6 +54,8 @@ export const TopBar = styled.div`
 export const MainContent = styled.div`
   flex: 1;
   padding: 20px;
+  height: 100vh;
+  overflow-y: auto;
 `;
 
 // Card Component for Metrics and Progress
