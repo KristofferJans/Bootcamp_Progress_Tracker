@@ -5,6 +5,7 @@ import Navbar from "@/components/Navbar";
 import Topbar from "@/components/Topbar";
 import StatisticSidebar from "@/components/StatisticsSidebar";
 import useSWR from "swr";
+import CircularProgressBar from "@/components/CircularProgressBar";
 
 const fetcher = (url) => fetch(url).then((response) => response.json());
 
@@ -12,6 +13,19 @@ export default function Home() {
   const { data, error } = useSWR("/api/challenges", fetcher);
   const { data: session, status } = useSession();
   console.log("session-data", data);
+
+  const { data: userData, mutate } = useSWR(
+    session ? `/api/users?id=${session?.user?.userId}` : null,
+    fetcher
+  );
+
+  console.log("User-Data-Dasboard", userData);
+
+  const finishedChallenges = userData?.finishedChallenges.length;
+  const totalChallenges = data?.length;
+  const progressPercentage2 = (finishedChallenges / totalChallenges) * 100;
+
+  console.log("progress", progressPercentage2);
 
   // const userId = session?.user?.userId;
   // const { data, error } = useSWR('/api/users?id=${}', fetcher);
@@ -21,6 +35,9 @@ export default function Home() {
 
   // If data is not available yet, or it's undefined
   if (!data) return <div>Loading...</div>;
+
+  const progressPercentage = 30;
+
   return (
     <Container>
       {/* Navigation Sidebar left*/}
@@ -40,7 +57,7 @@ export default function Home() {
           }}
         >
           <Card>
-            <h3>10</h3>
+            <h3>{finishedChallenges}</h3>
             <p>Finished Challenges</p>
           </Card>
           <Card>
@@ -53,13 +70,15 @@ export default function Home() {
           </Card>
         </div>
 
-        <h2 style={{ marginTop: "40px" }}>Finished Challenges</h2>
+        <h2 style={{ marginTop: "40px" }}>Progress</h2>
+
+        {/* <CircularProgressBar percent={progressPercentage2} /> */}
 
         {/* add more content here later*/}
       </MainContent>
 
       {/* Stats Sidebar */}
-      <StatisticSidebar></StatisticSidebar>
+      <StatisticSidebar percent={progressPercentage2}></StatisticSidebar>
     </Container>
   );
 }
