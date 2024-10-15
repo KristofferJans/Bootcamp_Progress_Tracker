@@ -11,7 +11,7 @@ export const Container = styled.div`
 // Sidebar Component
 export const Sidebar = styled.div`
   width: 250px;
-  background-color: #8e44ad;
+  background-color: #6e21a8;
   padding: 20px;
   color: white;
   display: flex;
@@ -24,7 +24,7 @@ export const Sidebar = styled.div`
 
 // Navigation Buttons inside Sidebar
 export const NavButton = styled.button`
-  background-color: #7f22f5;
+  background-color: #b055f7;
   border: none;
   color: white;
   padding: 15px 20px;
@@ -35,7 +35,7 @@ export const NavButton = styled.button`
   font-size: 16px;
 
   &:hover {
-    background-color: #692bc9;
+    background-color: #9933ea;
   }
 `;
 
@@ -213,4 +213,38 @@ export const ProgressBarContainer = styled.div`
   justify-content: center;
   align-items: center;
   overflow: hidden;
+`;
+
+export const DashboardCard = styled.div`
+  background-color: #ead5ff;
+  color: ${(props) => (props.highlight ? "#fff" : "#333")};
+  padding: 20px;
+  margin: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  // Remove hover effect
+  h3 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #8e44ad;
+  }
+
+  p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: ${(props) => (props.highlight ? "#fff" : "#666")};
+  }
+
+  .statistic {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: ${(props) => (props.highlight ? "#FAF5FF" : "#8e44ad")};
+  }
+
+  .description {
+    font-size: 1rem;
+    color: ${(props) => (props.highlight ? "#EAD5FF" : "#666")};
+    margin-top: 10px;
+  }
 `;

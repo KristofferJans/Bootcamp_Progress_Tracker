@@ -4,6 +4,7 @@ import { VictoryPie, VictoryAnimation, VictoryLabel } from "victory";
 function CircularProgressBar({ percent }) {
   const [data, setData] = React.useState(getData(percent)); // Use initial percent
 
+  console.log("Data-Esraa", data);
   React.useEffect(() => {
     // Update the data whenever the percent prop changes
     setData(getData(percent));
@@ -30,7 +31,10 @@ function CircularProgressBar({ percent }) {
             },
           }}
         />
-        <VictoryAnimation duration={1000} data={{ percent }}>
+        <VictoryAnimation
+          duration={1000}
+          data={{ percent: isNaN(percent) ? 0 : percent || 0 }}
+        >
           {(newProps) => {
             return (
               <VictoryLabel
@@ -49,7 +53,8 @@ function CircularProgressBar({ percent }) {
   );
 }
 
-function getData(percent) {
+function getData(value) {
+  const percent = isNaN(value) ? 0 : value || 0;
   // Helper function to generate pie chart data based on percentage
   return [
     { x: 1, y: percent },
