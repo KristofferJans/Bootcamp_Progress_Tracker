@@ -11,7 +11,7 @@ export const Container = styled.div`
 // Sidebar Component
 export const Sidebar = styled.div`
   width: 250px;
-  background-color: #6e21a8;
+  background-color: #3d0764;
   padding: 20px;
   color: white;
   display: flex;
@@ -26,8 +26,8 @@ export const NavContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center; // Keeps the buttons slightly higher than center
-  margin-top: 120px; // Adjust this value to push the buttons up or down
+  justify-content: center;
+  margin-top: 120px;
   width: 100%;
   flex-grow: 0.6; // This value will give some flexibility to position the NavButtons
 `;
@@ -72,12 +72,19 @@ export const LoginButton = styled.button`
 // Top Bar
 export const TopBar = styled.div`
   width: 100%;
-  padding: 15px;
-  background-color: #ffffff;
+  padding: 15px 20px;
+  background-color: #3d0764; // Harmonische Farbe zu den anderen Komponenten
+  color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 12px; // Abgerundete Ecken für ein weicheres Aussehen
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // Sanfter Schatten für etwas Tiefe
+
+  h1 {
+    margin: 0;
+    font-size: 1.8rem;
+  }
 `;
 
 // Main Content Area
@@ -86,6 +93,8 @@ export const MainContent = styled.div`
   padding: 20px;
   height: 100vh;
   overflow-y: auto;
+  display: flex;
+  flex-direction: column;
 `;
 
 // Card Component for Metrics and Progress
@@ -142,11 +151,19 @@ export const CircularProgress = styled.div`
 
 export const GridContainer = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 20px;
-  padding: 20px;
-  justify-content: space-evenly;
+  grid-template-columns: repeat(2, 1fr); // 2 Spalten, gleiche Größe
+  gap: 20px; // Abstand zwischen den Karten
+
+  width: 100%; // Nimmt die volle Breite des Containers ein
 `;
+
+// export const GridContainer = styled.div`
+//   display: grid;
+//   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+//   gap: 20px;
+//   padding: 20px;
+//   justify-content: space-evenly;
+// `;
 
 export const GridCard = styled.div`
   background-color: #f5f5f5;
@@ -247,12 +264,14 @@ export const ProgressBarContainer = styled.div`
 
 export const DashboardCard = styled.div`
   background-color: #9733ea;
-  color: #fff; // Static text color
+  color: #fff;
   padding: 20px;
-  margin: 10px;
+  margin-top: 25px;
   border-radius: 8px;
+  width: 100%; // Nimmt die volle Breite der Spalte ein
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  cursor: pointer;
+
+  text-align: center;
 
   h3 {
     font-size: 1.8rem;
