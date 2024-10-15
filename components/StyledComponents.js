@@ -216,35 +216,35 @@ export const ProgressBarContainer = styled.div`
 `;
 
 export const DashboardCard = styled.div`
-  background-color: #ead5ff;
-  color: ${(props) => (props.highlight ? "#fff" : "#333")};
+  background-color: #9733ea;
+  color: #fff; // Static text color
   padding: 20px;
   margin: 10px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
 
-  // Remove hover effect
   h3 {
     font-size: 1.8rem;
     font-weight: bold;
-    color: #8e44ad;
+    color: #faf5ff;
   }
 
   p {
     font-size: 1.2rem;
     line-height: 1.6;
-    color: ${(props) => (props.highlight ? "#fff" : "#666")};
+    color: #ead5ff;
   }
 
   .statistic {
     font-size: 2.5rem;
     font-weight: bold;
-    color: ${(props) => (props.highlight ? "#FAF5FF" : "#8e44ad")};
+    color: #faf5ff;
   }
 
   .description {
     font-size: 1rem;
-    color: ${(props) => (props.highlight ? "#EAD5FF" : "#666")};
+    color: #ead5ff;
     margin-top: 10px;
   }
 `;
