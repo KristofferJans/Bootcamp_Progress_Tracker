@@ -1,4 +1,5 @@
 import { signOut, signIn, useSession } from "next-auth/react";
+import { LoginButton } from "./StyledComponents";
 
 export default function AuthButton() {
   const { data: session } = useSession();
@@ -8,17 +9,17 @@ export default function AuthButton() {
   if (session) {
     return (
       <>
-        <button className={`$LogOut`} onClick={() => signOut()}>
+        <LoginButton className={`$LogOut`} onClick={() => signOut()}>
           Sign out
-        </button>
+        </LoginButton>
       </>
     );
   }
   return (
     <>
-      <button className={`Login`} onClick={() => signIn()}>
+      <LoginButton className={`Login`} onClick={() => signIn()}>
         Sign in
-      </button>
+      </LoginButton>
     </>
   );
 }

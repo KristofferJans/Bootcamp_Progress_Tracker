@@ -11,43 +11,80 @@ export const Container = styled.div`
 // Sidebar Component
 export const Sidebar = styled.div`
   width: 250px;
-  background-color: #8e44ad;
+  background-color: #3d0764;
   padding: 20px;
   color: white;
   display: flex;
   flex-direction: column;
+  align-items: center;
   position: sticky;
   top: 0;
   height: 100vh;
-  overflow-y: auto;
+`;
+
+export const NavContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 120px;
+  width: 100%;
+  flex-grow: 0.6;
 `;
 
 // Navigation Buttons inside Sidebar
 export const NavButton = styled.button`
-  background-color: #7f22f5;
+  background-color: #b055f7;
   border: none;
   color: white;
   padding: 15px 20px;
   margin: 10px 0;
   cursor: pointer;
   border-radius: 8px;
-  text-align: left;
+  text-align: center;
   font-size: 16px;
+  width: 100%;
 
   &:hover {
-    background-color: #692bc9;
+    background-color: #9933ea;
+  }
+`;
+
+export const LoginButton = styled.button`
+  background-color: #ffffff;
+  border: 2px solid #9933ea;
+  color: #6e21a8;
+  padding: 10px 20px;
+  margin-top: 170px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 16px;
+  width: 100%;
+
+  &:hover {
+    background-color: #9933ea;
+    color: #ffffff;
   }
 `;
 
 // Top Bar
 export const TopBar = styled.div`
   width: 100%;
-  padding: 15px;
-  background-color: #ffffff;
+  padding: 15px 20px;
+  background-color: #3d0764;
+  color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  h1 {
+    margin: 0;
+    font-size: 1.8rem;
+  }
 `;
 
 // Main Content Area
@@ -56,6 +93,8 @@ export const MainContent = styled.div`
   padding: 20px;
   height: 100vh;
   overflow-y: auto;
+  display: flex;
+  flex-direction: column;
 `;
 
 // Card Component for Metrics and Progress
@@ -112,11 +151,19 @@ export const CircularProgress = styled.div`
 
 export const GridContainer = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 20px;
-  padding: 20px;
-  justify-content: space-evenly;
+
+  width: 100%;
 `;
+
+// export const GridContainer = styled.div`
+//   display: grid;
+//   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+//   gap: 20px;
+//   padding: 20px;
+//   justify-content: space-evenly;
+// `;
 
 export const GridCard = styled.div`
   background-color: #f5f5f5;
@@ -201,7 +248,7 @@ export const StatusButton = styled.button`
   border-radius: 5px;
 
   &:hover {
-    background-color: green;
+    background-color: #8e44ad;
   }
 `;
 
@@ -213,4 +260,99 @@ export const ProgressBarContainer = styled.div`
   justify-content: center;
   align-items: center;
   overflow: hidden;
+`;
+
+export const DashboardCard = styled.div`
+  background-color: #9733ea;
+  color: #fff;
+  padding: 20px;
+  margin-top: 25px;
+  border-radius: 8px;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  text-align: center;
+
+  h3 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #faf5ff;
+  }
+
+  p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #ead5ff;
+  }
+
+  .statistic {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #faf5ff;
+  }
+
+  .description {
+    font-size: 1rem;
+    color: #ead5ff;
+    margin-top: 10px;
+  }
+`;
+
+export const LevelContainer = styled.div`
+  background-color: #6e21a8;
+  color: #fff;
+  padding: 20px;
+  margin-top: 0px;
+  border-radius: 8px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  h2 {
+    font-size: 1.4rem;
+    margin: 0;
+    font-weight: bold;
+    color: #ffffff;
+  }
+`;
+
+export const CircularProgressContainer = styled.div`
+  background-color: #ffffff;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 8px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+
+  @media (max-width: 768px) {
+    padding: 15px;
+    h3 {
+      font-size: 1.2rem;
+    }
+  }
+`;
+
+export const SearchInput = styled.input`
+  width: 200px;
+  padding: 10px;
+  border: none;
+  outline: none;
+  background-color: #f5f5f5;
+  color: #333;
+  font-size: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  &::placeholder {
+    color: #999;
+  }
+
+  &:focus {
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  }
 `;

@@ -1,6 +1,12 @@
 import React from "react";
 import { useSession } from "next-auth/react";
-import { Container, MainContent, Card } from "../components/StyledComponents";
+import {
+  Container,
+  MainContent,
+  Card,
+  DashboardCard,
+  GridContainer,
+} from "../components/StyledComponents";
 import Navbar from "@/components/Navbar";
 import Topbar from "@/components/Topbar";
 import StatisticSidebar from "@/components/StatisticsSidebar";
@@ -35,7 +41,7 @@ export default function Home() {
 
   console.log("User-Data-Dasboard", userData);
 
-  const finishedChallenges = userData?.finishedChallenges.length;
+  const finishedChallenges = userData?.finishedChallenges.length || 0;
   const totalChallenges = data?.length;
   const progressPercentage2 = (finishedChallenges / totalChallenges) * 100;
 
@@ -65,28 +71,20 @@ export default function Home() {
         <Topbar></Topbar>
 
         {/* Statistic Cards - currently hardcoded */}
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "space-around",
-            marginTop: "20px",
-          }}
-        >
-          <Card>
+        <GridContainer>
+          <DashboardCard>
             <h3>{finishedChallenges}</h3>
             <p>Finished Challenges</p>
-          </Card>
-          <Card>
+          </DashboardCard>
+          <DashboardCard>
             <h3>2/5</h3>
             <p>Recap Projects done</p>
-          </Card>
-          <Card>
+          </DashboardCard>
+          <DashboardCard>
             <h3>13</h3>
             <p>New Skills unlocked</p>
-          </Card>
-        </div>
-
-        <h2 style={{ marginTop: "40px" }}>Progress</h2>
+          </DashboardCard>
+        </GridContainer>
 
         {/* <CircularProgressBar percent={progressPercentage2} /> */}
 

@@ -4,13 +4,14 @@ import { VictoryPie, VictoryAnimation, VictoryLabel } from "victory";
 function CircularProgressBar({ percent }) {
   const [data, setData] = React.useState(getData(percent)); // Use initial percent
 
+  console.log("Data-Esraa", data);
   React.useEffect(() => {
     // Update the data whenever the percent prop changes
     setData(getData(percent));
   }, [percent]); // Re-run this effect when the percent changes
 
   return (
-    <div style={{ width: "400px", height: "400px" }}>
+    <div style={{ width: "200px", height: "200px" }}>
       <svg viewBox="0 0 400 400" width="100%" height="100%">
         <VictoryPie
           standalone={false}
@@ -24,13 +25,16 @@ function CircularProgressBar({ percent }) {
           style={{
             data: {
               fill: ({ datum }) => {
-                const color = datum.y > 30 ? "green" : "red";
+                const color = datum.y > 30 ? "#8222ce" : "#c384fc";
                 return datum.x === 1 ? color : "transparent";
               },
             },
           }}
         />
-        <VictoryAnimation duration={1000} data={{ percent }}>
+        <VictoryAnimation
+          duration={1000}
+          data={{ percent: isNaN(percent) ? 0 : percent || 0 }}
+        >
           {(newProps) => {
             return (
               <VictoryLabel
@@ -49,7 +53,8 @@ function CircularProgressBar({ percent }) {
   );
 }
 
-function getData(percent) {
+function getData(value) {
+  const percent = isNaN(value) ? 0 : value || 0;
   // Helper function to generate pie chart data based on percentage
   return [
     { x: 1, y: percent },
