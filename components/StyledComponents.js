@@ -248,7 +248,7 @@ export const StatusButton = styled.button`
   border-radius: 5px;
 
   &:hover {
-    background-color: green;
+    background-color: #8e44ad;
   }
 `;
 
