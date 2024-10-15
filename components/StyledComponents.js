@@ -16,10 +16,20 @@ export const Sidebar = styled.div`
   color: white;
   display: flex;
   flex-direction: column;
+  align-items: center;
   position: sticky;
   top: 0;
   height: 100vh;
-  overflow-y: auto;
+`;
+
+export const NavContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; // Keeps the buttons slightly higher than center
+  margin-top: 120px; // Adjust this value to push the buttons up or down
+  width: 100%;
+  flex-grow: 0.6; // This value will give some flexibility to position the NavButtons
 `;
 
 // Navigation Buttons inside Sidebar
@@ -31,11 +41,31 @@ export const NavButton = styled.button`
   margin: 10px 0;
   cursor: pointer;
   border-radius: 8px;
-  text-align: left;
+  text-align: center;
   font-size: 16px;
+  width: 100%;
 
   &:hover {
     background-color: #9933ea;
+  }
+`;
+
+export const LoginButton = styled.button`
+  background-color: #ffffff;
+  border: 2px solid #9933ea;
+  color: #6e21a8;
+  padding: 10px 20px;
+  margin-top: 170px;
+  margin-bottom: 10px; // Adds spacing under the Login button
+  cursor: pointer;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 16px;
+  width: 100%; // Matches the width of NavButtons
+
+  &:hover {
+    background-color: #9933ea;
+    color: #ffffff;
   }
 `;
 
