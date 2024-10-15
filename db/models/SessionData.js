@@ -1,4 +1,5 @@
 import mongoose from "mongoose";
+import "./Challenge";
 
 const { Schema } = mongoose;
 
