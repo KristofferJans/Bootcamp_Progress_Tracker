@@ -1,5 +1,4 @@
 import mongoose from "mongoose";
-import "./SessionData";
 
 const { Schema } = mongoose;
 
