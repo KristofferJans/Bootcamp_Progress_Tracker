@@ -29,7 +29,7 @@ export const NavContainer = styled.div`
   justify-content: center;
   margin-top: 120px;
   width: 100%;
-  flex-grow: 0.6; // This value will give some flexibility to position the NavButtons
+  flex-grow: 0.6;
 `;
 
 // Navigation Buttons inside Sidebar
@@ -56,12 +56,12 @@ export const LoginButton = styled.button`
   color: #6e21a8;
   padding: 10px 20px;
   margin-top: 170px;
-  margin-bottom: 10px; // Adds spacing under the Login button
+  margin-bottom: 10px;
   cursor: pointer;
   border-radius: 8px;
   text-align: center;
   font-size: 16px;
-  width: 100%; // Matches the width of NavButtons
+  width: 100%;
 
   &:hover {
     background-color: #9933ea;
@@ -73,13 +73,13 @@ export const LoginButton = styled.button`
 export const TopBar = styled.div`
   width: 100%;
   padding: 15px 20px;
-  background-color: #3d0764; // Harmonische Farbe zu den anderen Komponenten
+  background-color: #3d0764;
   color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-radius: 12px; // Abgerundete Ecken für ein weicheres Aussehen
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // Sanfter Schatten für etwas Tiefe
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
   h1 {
     margin: 0;
@@ -151,10 +151,10 @@ export const CircularProgress = styled.div`
 
 export const GridContainer = styled.div`
   display: grid;
-  grid-template-columns: repeat(2, 1fr); // 2 Spalten, gleiche Größe
-  gap: 20px; // Abstand zwischen den Karten
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
 
-  width: 100%; // Nimmt die volle Breite des Containers ein
+  width: 100%;
 `;
 
 // export const GridContainer = styled.div`
@@ -268,7 +268,7 @@ export const DashboardCard = styled.div`
   padding: 20px;
   margin-top: 25px;
   border-radius: 8px;
-  width: 100%; // Nimmt die volle Breite der Spalte ein
+  width: 100%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
   text-align: center;
@@ -295,5 +295,64 @@ export const DashboardCard = styled.div`
     font-size: 1rem;
     color: #ead5ff;
     margin-top: 10px;
+  }
+`;
+
+export const LevelContainer = styled.div`
+  background-color: #6e21a8;
+  color: #fff;
+  padding: 20px;
+  margin-top: 0px;
+  border-radius: 8px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  h2 {
+    font-size: 1.4rem;
+    margin: 0;
+    font-weight: bold;
+    color: #ffffff;
+  }
+`;
+
+export const CircularProgressContainer = styled.div`
+  background-color: #ffffff;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 8px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+
+  @media (max-width: 768px) {
+    padding: 15px;
+    h3 {
+      font-size: 1.2rem;
+    }
+  }
+`;
+
+export const SearchInput = styled.input`
+  width: 200px;
+  padding: 10px;
+  border: none;
+  outline: none;
+  background-color: #f5f5f5;
+  color: #333;
+  font-size: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  &::placeholder {
+    color: #999;
+  }
+
+  &:focus {
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
   }
 `;

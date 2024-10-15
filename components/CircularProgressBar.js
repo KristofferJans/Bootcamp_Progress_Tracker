@@ -11,7 +11,7 @@ function CircularProgressBar({ percent }) {
   }, [percent]); // Re-run this effect when the percent changes
 
   return (
-    <div style={{ width: "400px", height: "400px" }}>
+    <div style={{ width: "200px", height: "200px" }}>
       <svg viewBox="0 0 400 400" width="100%" height="100%">
         <VictoryPie
           standalone={false}
@@ -25,7 +25,7 @@ function CircularProgressBar({ percent }) {
           style={{
             data: {
               fill: ({ datum }) => {
-                const color = datum.y > 30 ? "green" : "red";
+                const color = datum.y > 30 ? "#8222ce" : "#c384fc";
                 return datum.x === 1 ? color : "transparent";
               },
             },

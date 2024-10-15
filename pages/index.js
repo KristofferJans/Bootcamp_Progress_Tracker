@@ -86,8 +86,6 @@ export default function Home() {
           </DashboardCard>
         </GridContainer>
 
-        <h2 style={{ marginTop: "40px" }}>Progress</h2>
-
         {/* <CircularProgressBar percent={progressPercentage2} /> */}
 
         {/* add more content here later*/}
