@@ -5,6 +5,11 @@ import {
   GridContainer,
   DetailsCard,
   StatusButton,
+  LoginButton,
+  NavButton,
+  BackButton,
+  PageTitle,
+  DetailsTitle,
 } from "./StyledComponents";
 import Link from "next/link";
 import { useSession } from "next-auth/react";
@@ -73,12 +78,16 @@ export default function Session() {
   return (
     <>
       <DetailsCard>
-        <h1>{data.title}</h1>
-        <p>{data.category}</p>
+        <DetailsTitle>{data.title}</DetailsTitle>
+        <p class="summary">{data.category}</p>
         <h3>{data.short}</h3>
         <p>{data.long}</p>
-        <p class="summary">Skills: {data.skills}</p>
-        <Link href="/sessions">Back</Link>
+        {/* <p class="summary">Skills: {data.skills}</p> */}
+        <BackButton>
+          <Link href="/sessions" legacyBehavior>
+            Back
+          </Link>
+        </BackButton>
       </DetailsCard>
       {data.challenges && data.challenges.length > 0 ? (
         <GridContainer>

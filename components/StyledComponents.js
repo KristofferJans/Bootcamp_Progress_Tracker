@@ -50,6 +50,25 @@ export const NavButton = styled.button`
   }
 `;
 
+export const BackButton = styled.button`
+  background-color: #b055f7;
+  border: none;
+  color: white;
+  padding: 15px 20px;
+  margin: 10px 0;
+  cursor: pointer;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 16px;
+
+  top: 20px;
+  right: 20px;
+  position: absolute;
+  &:hover {
+    background-color: #9933ea;
+  }
+`;
+
 export const LoginButton = styled.button`
   background-color: #ffffff;
   border: 2px solid #9933ea;
@@ -355,4 +374,28 @@ export const SearchInput = styled.input`
     background-color: #ffffff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
   }
+`;
+
+export const PageTitle = styled.h1`
+  font-size: 2rem;
+  font-weight: bold;
+  color: #3d0764;
+  margin-bottom: 20px;
+  text-align: left;
+  border-left: 5px solid #b055f7;
+  padding-left: 15px;
+  margin-left: 10px;
+  margin-top: 30px;
+`;
+
+export const DetailsTitle = styled.h1`
+  font-size: 2rem;
+  font-weight: bold;
+  color: #3d0764;
+  margin-bottom: 20px;
+  text-align: left;
+  border-left: 5px solid #b055f7;
+  padding-left: 15px;
+
+  margin-top: 20px;
 `;
