@@ -375,3 +375,27 @@ export const SearchInput = styled.input`
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
   }
 `;
+
+export const PageTitle = styled.h1`
+  font-size: 2rem;
+  font-weight: bold;
+  color: #3d0764;
+  margin-bottom: 20px;
+  text-align: left;
+  border-left: 5px solid #b055f7;
+  padding-left: 15px;
+  margin-left: 10px;
+  margin-top: 30px;
+`;
+
+export const DetailsTitle = styled.h1`
+  font-size: 2rem;
+  font-weight: bold;
+  color: #3d0764;
+  margin-bottom: 20px;
+  text-align: left;
+  border-left: 5px solid #b055f7;
+  padding-left: 15px;
+
+  margin-top: 20px;
+`;

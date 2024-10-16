@@ -7,6 +7,7 @@ import {
   Card,
   GridCard,
   GridContainer,
+  PageTitle,
 } from "@/components/StyledComponents";
 import Navbar from "@/components/Navbar";
 import Topbar from "@/components/Topbar";
@@ -34,7 +35,7 @@ export default function Home() {
         {/* Topbar */}
         <Topbar></Topbar>
 
-        <h2 style={{ marginTop: "40px" }}>Sessions</h2>
+        <PageTitle>Sessions</PageTitle>
         {/* <p>{data[0].sessionId.long}</p> */}
         {/* <p>{data[20].title}</p>
         <div>
