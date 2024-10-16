@@ -85,6 +85,7 @@ export default function Home() {
   if (!data) return <div>Loading...</div>;
 
   const userLevel = levelUp(progressPercentage2);
+  const motivationQuote = motivation(progressPercentage2);
 
   const progressPercentage = 30;
 
@@ -103,6 +104,16 @@ export default function Home() {
           <DashboardCard>
             <h3>{finishedChallenges}</h3>
             <p>Finished Challenges</p>
+          </DashboardCard>
+          <DashboardCard
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              height: "200px",
+            }}
+          >
+            <h2>{motivationQuote}</h2>
           </DashboardCard>
           <DashboardCard>
             <h3>2/5</h3>
