@@ -29,6 +29,34 @@ function levelUp(progressPercentage2) {
   }
 }
 
+function motivation(progressPercentage2) {
+  if (progressPercentage2 === 100) {
+    return "Congratulations, you finished all the challenges!";
+  } else if (progressPercentage2 >= 90) {
+    return "You're almost there! Just a little more!";
+  } else if (progressPercentage2 >= 80) {
+    return "Great job! Keep pushing, you're so close!";
+  } else if (progressPercentage2 >= 70) {
+    return "You're doing amazing, the finish line is in sight!";
+  } else if (progressPercentage2 >= 60) {
+    return "Impressive progress! Keep up the great work!";
+  } else if (progressPercentage2 >= 50) {
+    return "Halfway there, you’re making fantastic progress!";
+  } else if (progressPercentage2 >= 40) {
+    return "You're building great momentum, keep going!";
+  } else if (progressPercentage2 >= 30) {
+    return "You're off to a strong start, keep it up!";
+  } else if (progressPercentage2 >= 20) {
+    return "Good effort! Every step forward counts!";
+  } else if (progressPercentage2 >= 10) {
+    return "You’ve made the first steps, stay focused!";
+  } else if (progressPercentage2 >= 1) {
+    return "Great start! Keep moving forward!";
+  } else {
+    return "You're just beginning! Start your journey now!";
+  }
+}
+
 export default function Home() {
   const { data, error } = useSWR("/api/challenges", fetcher);
   const { data: session, status } = useSession();
