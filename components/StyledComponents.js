@@ -50,6 +50,25 @@ export const NavButton = styled.button`
   }
 `;
 
+export const BackButton = styled.button`
+  background-color: #b055f7;
+  border: none;
+  color: white;
+  padding: 15px 20px;
+  margin: 10px 0;
+  cursor: pointer;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 16px;
+
+  top: 20px;
+  right: 20px;
+  position: absolute;
+  &:hover {
+    background-color: #9933ea;
+  }
+`;
+
 export const LoginButton = styled.button`
   background-color: #ffffff;
   border: 2px solid #9933ea;
