@@ -47,8 +47,18 @@ export default async function handler(request, response) {
         user.progress.push({ challengeId, progressLevel });
       }
 
+      // Handle the finishedChallenges logic
       if (progressLevel === 4) {
-        user.finishedChallenges.push(challengeId);
+        // If progress is "Merged", add to finishedChallenges (if it's not already there)
+        if (!user.finishedChallenges.includes(challengeId)) {
+          user.finishedChallenges.push(challengeId);
+        }
+      } else {
+        // If progress is anything other than "Merged", remove it from finishedChallenges
+        user.finishedChallenges = user.finishedChallenges.filter(
+          (finishedChallengeId) =>
+            finishedChallengeId.toString() !== challengeId
+        );
       }
       // Save the updated user
       await user.save();
